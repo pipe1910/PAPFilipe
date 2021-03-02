@@ -1,0 +1,214 @@
+<?php
+function top(){
+    ?>
+    <!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<title>PHPJabbers.com | Free Car Dealer Website Template</title>
+
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+
+			<div id="wrapper">
+
+
+
+				<!-- Header -->
+
+					<header id="header" >
+						<a href="index.php" class="logo">
+							<span class="title">Sneaker Store</span>
+						</a>
+
+
+							<div style="float: right">
+							<a href="#" data-toggle="modal" data-target="#login">Login</a>
+
+							<a href="#" data-toggle="modal" data-target="#regista">Registar</a>
+							</div>
+
+						<div class="nav">
+							<ul style="width: 100%; background-color: #5d5d5d">
+								<li><a class="menu" href="nike.php">Nike</a></li>
+								<li><a class="menu" href="adidas.php">Adidas</a></li>
+								<li><a class="menu" href="underarmour.php">Under Armour</a></li>
+								<li><a class="menu" href="asics.php">Asics</a></li>
+								<li><a class="menu" href="puma.php">Puma</a></li>
+								<li><a class="menu" href="vans.php">Vans</a></li>
+							</ul>
+
+						</div>
+
+
+					</header>
+
+    <?php
+
+        }
+
+?>
+
+                <?php
+function bot(){
+    ?>
+
+                <footer id="footer">
+
+                    <div class="inner">
+
+                        <section>
+
+                            <h2>Contacte-nos</h2>
+
+                            <form method="post" action="#">
+
+                                <div class="fields">
+
+                                    <div class="field half">
+
+                                        <input type="text" name="nome" id="nome" placeholder="Nome" />
+
+                                    </div>
+
+
+
+                                    <div class="field half">
+
+                                        <input type="text" name="email" id="email" placeholder="Email" />
+
+                                    </div>
+
+
+
+                                    <div class="field">
+
+                                        <input type="text" name="notas" id="notas" placeholder="Crítica" />
+
+                                    </div>
+
+
+
+                                    <div class="field">
+
+                                        <textarea name="message" id="message" rows="3" placeholder="Notas"></textarea>
+
+                                    </div>
+
+
+
+                                    <div class="field text-right">
+
+                                        <label>&nbsp;</label>
+
+
+
+                                        <ul class="actions" style="width: 290px; height: 70px">
+
+                                            <li><input type="submit" value="Enviar Mensagem" class="primary" style="height: 80px; text-align: center;" /></li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </section>
+
+                        <section>
+
+                            <h2>Apoio ao Cliente</h2>
+
+
+
+                            <table class="alt" style="background-color: white">
+
+                                <th><span class="fa fa-envelope-o"></span> <a href="https://www.google.com/intl/pt-PT/gmail/about/#">sneakerstore@apoio.pt</a></th>
+
+                                <thead><span class="fa fa-phone"></span> +351 912345678</thead>
+
+                                <th><span class="fa fa-map-pin"></span>Escola Secundária Pinhal do Rei, Marinha Grande, Leiria, Portugal</th>
+
+                            </table>
+
+
+
+                            <h2>Redes Sociais</h2>
+
+
+
+                            <table class="icons" style="height: 51px; width: 300px">
+
+                                <tr><a href="https://twitter.com/login?lang=pt" class="icon style2 fa-twitter"><span class="label" style="background-color: #ffffff">Twitter</span></a></tr>
+
+                                <tr ><a href="https://pt-pt.facebook.com/" class="icon style2 fa-facebook" style="margin-left: 20px; margin-right: 20px"><span class="label">Facebook</span></a></tr>
+
+                                <tr><a href="https://www.instagram.com/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></tr>
+
+
+
+
+
+                            </table>
+
+                        </section>
+
+
+
+
+                        <ul class="copyright" >
+
+                            <li>Copyright © 2020 Company Name</li>
+
+                            <li>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </footer>
+
+
+
+            </div>
+
+
+
+        <!-- Scripts -->
+
+        <script src="assets/js/jquery.min.js"></script>
+
+        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
+
+
+
+    </body>
+
+</html>
+
+    <?php
+
+        }
+
+?>
