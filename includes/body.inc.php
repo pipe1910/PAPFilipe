@@ -45,7 +45,7 @@ function top(){
 						<div class="nav" style="width: 100%;">
 
 
-							<ul style="background-color: #5d5d5d;">
+							<ul style="background-color: #5d5d5d; margin-left: 30%">
                                 <li><a class="menu" href="nike.php">Nike</a></li>
                                 <li><a class="menu" href="adidas.php">Adidas</a></li>
 								<li><a class="menu" href="underarmour.php">Under Armour</a></li>
@@ -56,7 +56,6 @@ function top(){
 							</ul>
 
 						</div>
-
 
 					</header>
 
