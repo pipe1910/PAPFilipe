@@ -7,7 +7,7 @@ function top(){
 
 	<head>
 
-		<title>PHPJabbers.com | Free Car Dealer Website Template</title>
+		<title>Sneaker Store</title>
 
 		<meta charset="utf-8" />
 
@@ -37,9 +37,30 @@ function top(){
 
 
 							<div style="float: right">
-							<a href="#" data-toggle="modal" data-target="#login">Login</a>
+							<a href="#" data-toggle="modal" data-target="#login">Login
+                                <i class="fas fa-home"></i>
+							<a href="#" data-toggle="modal" data-target="#regista">Registar
+                                <i class="fas fa-sign-in-alt"></i></a>
+                                <br>
+                                <a href="CriticasEFeedBacks.php">
+                                    <i class="fas fa-comments"></i>
+                                    <span class="btn-sm btn-light">Críticas e Feedbacks</span>
+                                </a>
+                                <a href="carrinho.php">
+                                    <i class="fas fa-cart-plus"></i>
+                                    <span class="btn-sm btn-light">Carrinho</span>
 
-							<a href="#" data-toggle="modal" data-target="#regista">Registar</a>
+                                </a>
+
+                                <a href="contact.php">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="btn-sm btn-light">Localização</span>
+
+                                </a>
+
+
+
+
 							</div>
 
 						<div class="nav" style="width: 100%;">
