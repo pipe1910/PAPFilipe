@@ -42,14 +42,17 @@ function top(){
 							<a href="#" data-toggle="modal" data-target="#regista">Registar</a>
 							</div>
 
-						<div class="nav">
-							<ul style="width: 100%; background-color: #5d5d5d">
-								<li><a class="menu" href="nike.php">Nike</a></li>
-								<li><a class="menu" href="adidas.php">Adidas</a></li>
+						<div class="nav" style="width: 100%;">
+
+
+							<ul style="background-color: #5d5d5d;">
+                                <li><a class="menu" href="nike.php">Nike</a></li>
+                                <li><a class="menu" href="adidas.php">Adidas</a></li>
 								<li><a class="menu" href="underarmour.php">Under Armour</a></li>
 								<li><a class="menu" href="asics.php">Asics</a></li>
 								<li><a class="menu" href="puma.php">Puma</a></li>
 								<li><a class="menu" href="vans.php">Vans</a></li>
+
 							</ul>
 
 						</div>
