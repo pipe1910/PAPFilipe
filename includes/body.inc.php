@@ -55,7 +55,11 @@ function top(){
                                 <a href="contact.php">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span class="btn-sm btn-light">Localização</span>
+                                </a>
 
+                                <a href="admin.php">
+                                    <i class="fas fa-users-cog"></i>
+                                    <span class="btn-sm btn-light">Administração</span>
                                 </a>
 
 
