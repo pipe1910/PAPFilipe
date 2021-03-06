@@ -28,7 +28,10 @@ top();
 
 <h2 align="left ">Sneaker's Admin
     <br>
-<button type="button" class="btn btn-light" id="admin">Adicionar produto</button></h2>
+    <a href="html/adicionaproduto.php">
+<button type="button" class="btn btn-light" id="admin">Adicionar produto</button>
+    </h2>
+</a>
 
 <table>
     <tr>
@@ -82,40 +85,6 @@ top();
     </tr>
 
 </table>
-<div class="modal fade" id="admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Adicionar produto</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="InputEmail">E-mail:</label>
-                        <input type="email" class="form-control" id="InputEmail">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Palavra-passe:</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-
-
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Manter-me logado</label>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-light" data-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-light">Submeter</button>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
 
