@@ -28,7 +28,7 @@ top();
 
 <h2 align="left ">Sneaker's Admin
     <br>
-    <a href="html/adicionaproduto.php">
+    <a href="adicionaproduto.php">
 <button type="button" class="btn btn-light" id="admin">Adicionar produto</button>
     </h2>
 </a>

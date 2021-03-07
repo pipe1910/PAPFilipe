@@ -2,15 +2,17 @@
 include_once ("includes/body.inc.php");
 
 
-$nome=addslashes($_POST['marcaId']);
-$empresaId=intval($_POST['imagemProdutoId']);
+$prodnome=addslashes($_POST['produtoNome']);
+$prodpreco=addslashes($_POST['produtoPreco']);
+$produtoId=addslashes($_GET['produtoId']);
+$produtoMarcaId=intval($_POST['pro']);
 $imagem=$_FILES['imagemURL']['name'];
-$novoNome="imagens/".$imagem;
+$novoNome="images/".$imagem;
 
-copy($_FILES['logoMarcaId']['tmp_name'],$novoNome);
+copy($_FILES['produtoNome']['tmp_name'],$novoNome);
 
-echo $sql="insert into canais(produtoNome,marcaLogoURL,produtoMarcaId) 
-values('".$nome."','imagens/".$imagem."',".$empresaId.");";
+echo $sql="insert into produtos(produtoNome,produtoPreco,produtoMarcaId) 
+values('".$prodnome."','images/".$imagem."',".$produtoId.");";
 mysqli_query($con,$sql);
 header("location:adicionaproduto.php");
 ?>
