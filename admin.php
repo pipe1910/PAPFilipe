@@ -30,9 +30,12 @@ top();
     <br>
     <a href="adicionaproduto.php">
 <button type="button" class="btn btn-light" id="admin">Adicionar produto</button>
-    </h2>
-</a>
 
+</a>
+<a href="adicionaMarca.php">
+    <button type="button" class="btn btn-light" id="admin">Adicionar marca</button>
+</a>
+</h2>
 <table>
     <tr>
         <th>Sapatilha</th>
