@@ -8,7 +8,7 @@
 
 ?>
 <h1>Editar Marca</h1>
-<form action="confirmaEditaMarca.php" method="post" enctype="multipart/form-data">
+<form action="adminMarcas.php" method="post" enctype="multipart/form-data">
 <input type="hidden" name="marcaId" value="<?php echo $id?>">
 <label>Nome: </label>
 <input type="text" name="nomeMarca" value="<?php echo $dadosMarcas ['marcaNome']?>"><br>

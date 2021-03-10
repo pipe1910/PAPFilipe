@@ -28,12 +28,12 @@ top();
 
 <h2 align="left ">Sneaker's Admin
     <br>
-    <a href="adicionaproduto.php">
-<button type="button" class="btn btn-light" id="admin">Adicionar produto</button>
+    <a href="adminProdutos.php">
+<button type="button" class="btn btn-light" id="admin">Produtos</button>
 
 </a>
-<a href="adicionaMarca.php">
-    <button type="button" class="btn btn-light" id="admin">Adicionar marca</button>
+<a href="adminMarcas.php">
+    <button type="button" class="btn btn-light" id="admin">Marcas</button>
 </a>
 </h2>
 <table>

@@ -10,14 +10,32 @@ $result=mysqli_query($con,$sql);
 
 <script>
     function confirmaElimina(id) {
-        if(confirm('Confirma que deseja eliminar a marca?'))
-            window.location="eliminaMarca.php?id=" + id;
-    }
+        $.ajax({
+            url:"AJAX/AJAXGetNameMarca.php",
+            type:"post",
+            data:{
+                idCanal:id
+            },
+            success:function (result){
+                if(confirm('Confirma que deseja eliminar a marca:'+result+"?"))
+                    window.location="eliminaMarca.php?id=" + id;
+            }
+        })
+    };
+
+    $('document').ready(function (){
+        $('#search').keyup(function (){
+            fillTableMarcas(this.value);
+        });
+        fillTableMarcas();
+    })
 </script>
+
+
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
         <td colspan="5" align='right'>
-            <a href="adicionaMarca.php"><i class='fas fa-plus text-success'> Adicionar marca</i></a>
+            <a href="adicionaProduto.php"><i class='fas fa-plus text-success'> Adicionar produto</i></a>
         </td>
     </tr>
     <tr>
@@ -40,7 +58,13 @@ $result=mysqli_query($con,$sql);
     }
     ?>
 
+    <script>
+        function confirmaElimina(id) {
+            if(confirm('Confirma que deseja eliminar o registo?'))
+                window.location="../eliminaMarca.php?id=" + id;
+        }
 
+    </script>
 </table>
 
 <?php
