@@ -1,11 +1,10 @@
 <?php
 include_once ("includes/body.inc.php");
-$con=mysqli_connect("localhost","root","","pap2021sneakerstore");
-$nome=addslashes($_POST['marcaNome']);
+$nome=addslashes($_POST['nomeMarca']);
 $id=intval($_POST['marcaId']);
-$imagem=$_FILES['marcaLogoURL']['name'];
+$imagem=$_FILES['logoMarca']['name'];
 $novoNome="images/".$imagem;
-$sql="Update marcas set marcaNome='".$nome."',".;
+$sql="Update marcas set marcaNome='".$nome."',";
 if($imagem!=''){
     $sql.=", marcaLogoURL='images/".$imagem."'";
     copy($_FILES['logoMarca']['tmp_name'],$novoNome);
