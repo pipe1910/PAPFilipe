@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/body.inc.php");
+include_once("includes/body.inc.php");
 top();
 
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
@@ -17,7 +17,7 @@ $result=mysqli_query($con,$sql);
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
         <td colspan="5" align='right'>
-            <a href="adicionaImagem.php"><i class='fas fa-plus text-success'> Adicionar imagem</i></a>
+            <a href="../Adiciona/adicionaImagem.php"><i class='fas fa-plus text-success'> Adicionar imagem</i></a>
         </td>
     </tr>
     <tr>
@@ -33,7 +33,7 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['imagemId']?></td>
             <td><?php echo $dados['imagemNome']?></td>
             <td><img width='90' src="<?php echo $dados['imagemURL']?>"></td>
-            <td><a href="eliminaImagem.php" onclick="confirmaElimina(<?php echo $dados['marcaId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
+            <td><a href="../Elimina/eliminaImagem.php" onclick="confirmaElimina(<?php echo $dados['marcaId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
         </tr>
         <?php
     }

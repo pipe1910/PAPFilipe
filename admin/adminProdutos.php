@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/body.inc.php");
+include_once("includes/body.inc.php");
 top();
 
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
@@ -51,8 +51,8 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['marcaId']?></td>
             <td><?php echo $dados['marcaNome']?></td>
             <td><img width='90' src="<?php echo $dados['marcaLogoURL']?>"></td>
-            <td><a href="editaMarca.php?id=<?php echo $dados['marcaId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
-            <td><a href="eliminaMarca.php" onclick="confirmaElimina(<?php echo $dados['marcaId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
+            <td><a href="../Edita/editaMarca.php?id=<?php echo $dados['marcaId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
+            <td><a href="../Elimina/eliminaMarca.php" onclick="confirmaElimina(<?php echo $dados['marcaId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
         </tr>
         <?php
     }

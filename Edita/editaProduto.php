@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/body.inc.php");
+include_once("includes/body.inc.php");
 $id=intval($_GET['id']);
 
 $sql="select * from produtos where produtoId=$id";
@@ -8,7 +8,7 @@ $dadosProdutos=mysqli_fetch_array($resultProdutos);
 
 ?>
 <h1>Editar produto</h1>
-<form action="confirmaEditaProduto.php" method="post" enctype="multipart/form-data">
+<form action="../Confirma/confirmaEditaProduto.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="produtoId" value="<?php echo $id?>">
     <label>Nome: </label>
     <input type="text" name="produtoNome" value="<?php echo $dadosProdutos['pacoteNome']?>"><br>

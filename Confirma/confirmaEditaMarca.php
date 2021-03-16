@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/body.inc.php");
+include_once("includes/body.inc.php");
 $nome=addslashes($_POST['nomeMarca']);
 $id=intval($_POST['marcaId']);
 $imagem=$_FILES['logoMarca']['name'];

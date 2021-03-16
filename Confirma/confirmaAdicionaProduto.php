@@ -1,5 +1,5 @@
 <?php
-include_once ("includes/body.inc.php");
+include_once("includes/body.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 
 $prodnome=addslashes($_POST['produtoNome']);
