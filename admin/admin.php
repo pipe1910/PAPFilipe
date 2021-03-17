@@ -28,14 +28,14 @@ top();
 
 <h2 align="left ">Sneaker's Admin
     <br>
-    <a href="papFilipe\admin\adminProdutos.php">
+    <a href="papFilipe/admin/adminProdutos.php">
 <button type="button" class="btn btn-light" id="admin">Produtos</button>
 
 </a>
-<a href="papFilipe\admin\adminMarcas.php">
+<a href="papFilipe/admin/adminMarcas.php">
     <button type="button" class="btn btn-light" id="admin">Marcas</button>
 </a>
-    <a href="papFilipe\admin\adminImagens.php">
+    <a href="papFilipe/admin/adminImagens.php">
     <button type="button" class="btn btn-light" id="admin">Imagens</button>
 </a>
 </h2>

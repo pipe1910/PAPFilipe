@@ -61,7 +61,7 @@ function top(){
                                     <span class="btn-sm btn-light">Localização</span>
                                 </a>
 
-                                <a href="admin.php">
+                                <a href="admin/admin.php">
                                     <i class="fas fa-users-cog"></i>
                                     <span class="btn-sm btn-light">Administração</span>
                                 </a>
