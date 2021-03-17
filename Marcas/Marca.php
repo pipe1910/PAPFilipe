@@ -1,6 +1,6 @@
 <?php
-include_once("../includes/body2.inc.php");
-top();
+include_once("../includes/body.inc.php");
+top_2();
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $id= intval($_GET["id"]);
 $sql="select * from produtos inner join marcas on produtoMarcaId=marcaId inner join imagens on produtoId=imagemProdutoId where marcaId=".$id;
@@ -14,7 +14,7 @@ $dados=mysqli_fetch_array($result);
     <h3><?php echo $dados['produtoNome']?> <span class="pull-right"></span></h3>
 </div>
 <?php
-bot();
+bot_2();
 ?>
 
 
