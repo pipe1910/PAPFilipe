@@ -1,5 +1,5 @@
 <?php
-include_once("includes/body.inc.php");
+include_once("../includes/body.inc.php");
 
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $nome=addslashes($_POST['nomeImagem']);

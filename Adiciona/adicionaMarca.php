@@ -1,8 +1,8 @@
 <?php
-include_once("includes/body.inc.php");
+include_once("../includes/body.inc.php");
 ?>
 <h1>Adicionar nova marca</h1>
-<form action="../Confirma/confirmaNovaMarca.php" method="post" enctype="multipart/form-data">
+<form action="../admin/adminMarcas.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="nomeMarca"><br>
     <label>Log&oacutetipo:</label>

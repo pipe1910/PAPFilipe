@@ -1,6 +1,6 @@
 <?php
-include_once("includes/body.inc.php");
-top();
+include_once("../includes/body.inc.php");
+top_2();
 
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $sql="Select * from imagens";

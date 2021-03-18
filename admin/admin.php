@@ -1,6 +1,6 @@
 <?php
 include_once("../includes/body.inc.php");
-top();
+top_2();
 ?>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 <!DOCTYPE html>
@@ -28,14 +28,14 @@ top();
 
 <h2 align="left ">Sneaker's Admin
     <br>
-    <a href="papFilipe/admin/adminProdutos.php">
+    <a href="adminProdutos.php">
 <button type="button" class="btn btn-light" id="admin">Produtos</button>
 
 </a>
-<a href="papFilipe/admin/adminMarcas.php">
+<a href="adminMarcas.php">
     <button type="button" class="btn btn-light" id="admin">Marcas</button>
 </a>
-    <a href="papFilipe/admin/adminImagens.php">
+    <a href="adminImagens.php">
     <button type="button" class="btn btn-light" id="admin">Imagens</button>
 </a>
 </h2>
