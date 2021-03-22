@@ -35,7 +35,7 @@ function top(){
 				<!-- Header -->
 
 					<header id="header" >
-						<a href="../index.php" class="logo">
+						<a href="index.php" class="logo">
 							<span class="title">Sneaker Store</span>
 						</a>
 
@@ -47,22 +47,22 @@ function top(){
 							<a href="#" data-toggle="modal" data-target="#regista">Registar
                                 <i class="fas fa-sign-in-alt"></i></a>
                                 <br>
-                                <a href="../CriticasEFeedBacks.php">
+                                <a href="CriticasEFeedBacks.php">
                                     <i class="fas fa-comments"></i>
                                     <span class="btn-sm btn-light">Críticas e Feedbacks</span>
                                 </a>
-                                <a href="../carrinho.php">
+                                <a href="carrinho.php">
                                     <i class="fas fa-cart-plus"></i>
                                     <span class="btn-sm btn-light">Carrinho</span>
 
                                 </a>
 
-                                <a href="../contact.php">
+                                <a href="contact.php">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span class="btn-sm btn-light">Localização</span>
                                 </a>
 
-                                <a href="../admin/admin.php">
+                                <a href="admin/admin.php">
                                     <i class="fas fa-users-cog"></i>
                                     <span class="btn-sm btn-light">Administração</span>
                                 </a>
@@ -76,12 +76,12 @@ function top(){
 
 
 							<ul style="background-color: #5d5d5d; margin-left: 30%">
-                                <li><a class="menu" href="../Marcas/nike.php">Nike</a></li>
-                                <li><a class="menu" href="../Marcas/adidas.php">Adidas</a></li>
-								<li><a class="menu" href="../Marcas/underarmour.php">Under Armour</a></li>
-								<li><a class="menu" href="../Marcas/asics.php">Asics</a></li>
-								<li><a class="menu" href="../Marcas/puma.php">Puma</a></li>
-								<li><a class="menu" href="../Marcas/vans.php">Vans</a></li>
+                                <li><a class="menu" href="Marcas/nike.php">Nike</a></li>
+                                <li><a class="menu" href="Marcas/adidas.php">Adidas</a></li>
+								<li><a class="menu" href="Marcas/underarmour.php">Under Armour</a></li>
+								<li><a class="menu" href="Marcas/asics.php">Asics</a></li>
+								<li><a class="menu" href="Marcas/puma.php">Puma</a></li>
+								<li><a class="menu" href="Marcas/vans.php">Vans</a></li>
 
 							</ul>
 
