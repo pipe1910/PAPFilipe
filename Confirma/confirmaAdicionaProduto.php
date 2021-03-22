@@ -1,5 +1,5 @@
 <?php
-include_once("includes/body.inc.php");
+include_once("../includes/body.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 
 $prodnome=addslashes($_POST['produtoNome']);
@@ -11,6 +11,6 @@ $produtomarcaId=$_POST['produtoMarcaId'];
 echo $sql="insert into produtos(produtoNome,produtoDescricao,produtoPreco,produtoMarcaId) 
 values('".$prodnome."','".$prodDescricao."','".$prodpreco."','".$produtomarcaId."'); ";
 mysqli_query($con,$sql);
-print_r($sql);
-//header("location: admin.php");
+
+header("location: ../admin/admin.php");
 ?>
