@@ -35,9 +35,10 @@ function top(){
 				<!-- Header -->
 
 					<header id="header" >
-						<a href="index.php" class="logo">
+						<a href="../index.php" class="logo">
 							<span class="title">Sneaker Store</span>
 						</a>
+
 
 
 							<div style="float: right">
