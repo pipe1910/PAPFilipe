@@ -1,5 +1,6 @@
 <?php
 include_once("../includes/body.inc.php");
+top_2();
 ?>
 <h1>Adicionar nova marca</h1>
 <form action="../admin/adminMarcas.php" method="post" enctype="multipart/form-data">

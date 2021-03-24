@@ -1,14 +1,14 @@
 <?php
-    include_once("includes/body.inc.php");
+    include_once("../includes/body.inc.php");
     $id=intval($_GET['id']);
 
     $sql="select * from marcas where marcaId=$id";
     $result=mysqli_query($con,$sql);
     $dados=mysqli_fetch_array($result);
-
+top_2();
 ?>
 <h1>Editar Marca</h1>
-<form action="../Confirma/confirmaEditaMarca.php" method="post" enctype="multipart/form-data">
+<form action="../admin/adminMarcas.php" method="post" enctype="multipart/form-data">
 <input type="hidden" name="marcaId" value="<?php echo $id?>">
 <label>Nome: </label>
 <input type="text" name="nomeMarca" value="<?php echo $dados ['marcaNome']?>"><br>

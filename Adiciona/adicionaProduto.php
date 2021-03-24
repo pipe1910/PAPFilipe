@@ -1,6 +1,6 @@
 <?php
 include_once("../includes/body.inc.php");
-top();
+top_2();
 ?>
 <h1>Adicionar novo produto</h1>
 <form action="../Confirma/confirmaAdicionaProduto.php" method="post" enctype="multipart/form-data">
