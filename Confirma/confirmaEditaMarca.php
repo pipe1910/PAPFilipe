@@ -7,10 +7,10 @@ $imagem=$_FILES['logoMarca']['name'];
 $novoNome="images/".$imagem;
 $sql="Update marcas set marcaNome='".$nome."',";
 if($imagem!=''){
-    $sql.=", marcaLogoURL='images/".$imagem."'";
+    $sql.="marcaLogoURL='images/".$imagem."'";
     copy($_FILES['logoMarca']['tmp_name'],$novoNome);
 }
 $sql.=" where marcaId=".$id;
 mysqli_query($con,$sql);
-header("location:adminMarcas.php");
+header("location:../admin/adminMarcas.php");
 ?>
