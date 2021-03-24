@@ -1,6 +1,6 @@
 <?php
 include_once("../includes/body.inc.php");
-top();
+top_2();
 
 $con=mysqli_connect("localhost","root","","pap2021sneakerstore");
 $id=intval($_GET["id"]);

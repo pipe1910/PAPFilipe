@@ -7,10 +7,9 @@ $prodpreco=intval($_POST['produtoPreco']);
 $prodDescricao=addslashes($_POST['produtoDescricao']);
 $produtomarcaId=$_POST['produtoMarcaId'];
 
-
-echo $sql="insert into produtos(produtoNome,produtoDescricao,produtoPreco,produtoMarcaId) 
+$sql="insert into produtos(produtoNome,produtoDescricao,produtoPreco,produtoMarcaId) 
 values('".$prodnome."','".$prodDescricao."','".$prodpreco."','".$produtomarcaId."'); ";
 mysqli_query($con,$sql);
 
-header("location: ../admin/admin.php");
+header("location: ../admin/adminProdutos.php");
 ?>

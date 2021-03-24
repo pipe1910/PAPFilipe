@@ -1,5 +1,6 @@
 <?php
 include_once("../includes/body.inc.php");
+$con=mysqli_connect(HOST,USER,PWD,DATABASE);
 top_2();
 ?>
 <h1>Adicionar novo produto</h1>
@@ -7,13 +8,11 @@ top_2();
     <label>Nome: </label>
     <input type="text" name="produtoNome"><br>
     <br>
-    <label>Descrição:</label>
-    <textarea name="produtoDescricao" cols="50" rows="10">
+    <label>Descricao:</label>
+    <textarea name="produtoDescricao" cols="50" rows="5">
     </textarea>
     <br>
-    <br>
-    <br>
-    <label>Preço:</label>
+    <label>Preco:</label>
     <input type="text" name="produtoPreco">
     <br>
     <br>
@@ -31,9 +30,11 @@ top_2();
 
 
         ?>
+
     </select>
+    <input type="Submit" value="Adiciona">
+   <br>
 
 
-    <input type="Submit" value="Adiciona"
-    <a href="../admin/adminProdutos.php"></a><br>
+
 

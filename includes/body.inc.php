@@ -308,27 +308,7 @@ function bot(){
                     <i class="fas fa-users-cog"></i>
                     <span class="btn-sm btn-light">Administração</span>
                 </a>
-
-
-
-
         </div>
-
-        <div class="nav" style="width: 100%;">
-
-
-            <ul style="background-color: #5d5d5d; margin-left: 30%">
-                <li><a class="menu" href="../Marcas/nike.php">Nike</a></li>
-                <li><a class="menu" href="../Marcas/adidas.php">Adidas</a></li>
-                <li><a class="menu" href="../Marcas/underarmour.php">Under Armour</a></li>
-                <li><a class="menu" href="../Marcas/asics.php">Asics</a></li>
-                <li><a class="menu" href="../Marcas/puma.php">Puma</a></li>
-                <li><a class="menu" href="../Marcas/vans.php">Vans</a></li>
-
-            </ul>
-
-        </div>
-
     </header>
 
     <?php
