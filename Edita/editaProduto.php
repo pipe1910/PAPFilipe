@@ -5,9 +5,9 @@ $id=intval($_GET['id']);
 $sql="select * from produtos where produtoId=$id";
 $resultProdutos=mysqli_query($con,$sql);
 $dadosProdutos=mysqli_fetch_array($resultProdutos);
-
+top_2();
 ?>
-<h1>Editar produto</h1>
+<h2 align="center" style="margin-top: 10%">
 <form action="../Confirma/confirmaEditaProduto.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="produtoId" value="<?php echo $id?>">
     <label>Nome: </label>
@@ -36,7 +36,7 @@ $dadosProdutos=mysqli_fetch_array($resultProdutos);
 
         ?>
     </select>
-
+<br>
     <input type="Submit" value="Edita"><br>
 
 

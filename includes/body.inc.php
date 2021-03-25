@@ -284,8 +284,6 @@ function bot(){
         <a href="../index.php" class="logo">
             <span class="title">Sneaker Store</span>
         </a>
-
-
         <div style="float: right">
             <a href="#" data-toggle="modal" data-target="#login">Login
                 <i class="fas fa-home"></i>
@@ -311,6 +309,7 @@ function bot(){
                     <i class="fas fa-users-cog"></i>
                     <span class="btn-sm btn-light">Administração</span>
                 </a>
+
         </div>
     </header>
 

@@ -7,7 +7,7 @@
     $dados=mysqli_fetch_array($result);
 top_2();
 ?>
-<h1>Editar Marca</h1>
+<h2 align="center" style="margin-top: 10%">
 <form action="../Confirma/confirmaEditaMarca.php" method="post" enctype="multipart/form-data">
 <input type="hidden" name="marcaId" value="<?php echo $id?>">
 <label>Nome: </label>

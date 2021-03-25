@@ -3,7 +3,7 @@ include_once("../includes/body.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 top_2();
 ?>
-<h1>Adicionar novo produto</h1>
+<h2 align="center" style="margin-top: 10%">
 <form action="../Confirma/confirmaAdicionaProduto.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="produtoNome"><br>

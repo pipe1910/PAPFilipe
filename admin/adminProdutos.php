@@ -6,8 +6,8 @@ $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $sql="Select * from produtos inner join marcas on produtoMarcaId = marcaId";
 $result=mysqli_query($con,$sql);
 ?>
-
-
+<a href="../admin/admin.php"
+<button type="button" class="btn btn-light">Voltar</button></a>
 <script>
     function confirmaElimina(id) {
         $.ajax({
