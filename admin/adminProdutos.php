@@ -3,7 +3,7 @@ include_once("../includes/body.inc.php");
 top_2();
 
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
-$sql="Select * from produtos inner join marcas on produtoMarcaId = marcaId where marcaNome";
+$sql="Select * from produtos inner join marcas on produtoMarcaId = marcaId";
 $result=mysqli_query($con,$sql);
 ?>
 
