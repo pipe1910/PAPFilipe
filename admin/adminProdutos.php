@@ -56,7 +56,8 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['produtoPreco']?></td>
             <td><?php echo $dados['marcaNome']?></td>
             <td><a href="../Edita/editaProduto.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
-            <td><a href="../Elimina/eliminaProduto.php" onclick="confirmaElimina(<?php echo $dados['produtoId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
+            <td><a href="../Elimina/eliminaProduto.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
+
         </tr>
         <?php
     }
