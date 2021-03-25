@@ -6,6 +6,7 @@ $con=mysqli_connect("localhost","root","","pap2021sneakerstore");
 $id=intval($_GET["id"]);
 $sql="select * from produtos inner join imagens on produtoId=imagemProdutoId  inner join marcas on produtoMarcaId=marcaId  where produtoMarcaId=".$id;
 $result=mysqli_query($con,$sql);
+
 ?>
 <!DOCTYPE HTML>
 

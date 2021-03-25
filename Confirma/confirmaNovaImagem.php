@@ -9,7 +9,7 @@ $novoNome="images/".$imagem;
 copy($_FILES['logoImagem']['tmp_name'],$novoNome);
 
 echo $sql="insert into imagens(imagemNome,imagemURL) 
-values('".$nome."','images/".$imagem."');";
+values('".$nome."','".$imagem."');";
 mysqli_query($con,$sql);
 header("location:adminImagens.php");
 ?>

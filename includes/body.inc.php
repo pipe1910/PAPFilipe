@@ -76,13 +76,16 @@ function top(){
 
 
 							<ul style="background-color: #5d5d5d; margin-left: 30%">
-                                <li><a class="menu" href="Marcas/nike.php">Nike</a></li>
-                                <li><a class="menu" href="Marcas/adidas.php">Adidas</a></li>
-								<li><a class="menu" href="Marcas/underarmour.php">Under Armour</a></li>
-								<li><a class="menu" href="Marcas/asics.php">Asics</a></li>
-								<li><a class="menu" href="Marcas/puma.php">Puma</a></li>
-								<li><a class="menu" href="Marcas/vans.php">Vans</a></li>
-
+                                <?php
+                                $con=mysqli_connect(HOST,USER,PWD,DATABASE);
+                                $sql="select * from marcas";
+                                $result=mysqli_query($con,$sql);
+                                while($dados=mysqli_fetch_array($result)){
+                                ?>
+                                <li><a class="menu" href="Marcas/marca.php?id=<?php echo $dados["marcaId"] ?>"><?php echo $dados["marcaNome"] ?></a></li>
+                                <?php
+                                }
+                                ?>
 							</ul>
 
 						</div>

@@ -26,7 +26,7 @@ top_2();
 </head>
 <body>
 
-<h2 align="left ">Sneaker's Admin
+<h2 align="center" style="margin-top: 10%"> Sneaker's Admin:
     <br>
     <a href="adminProdutos.php">
 <button type="button" class="btn btn-light" id="admin">Produtos</button>
@@ -39,58 +39,7 @@ top_2();
     <button type="button" class="btn btn-light" id="admin">Imagens</button>
 </a>
 </h2>
-<table>
-    <tr>
-        <th>Sapatilha</th>
-        <th>Fotografia</th>
-        <th>Preço</th>
-        <th>Editar</th>
-        <th>Eliminar</th>
-    </tr>
-    <tr>
-        <td>Nike Air Force 1 07 Premium</td>
-        <td><img src="../images/af1prebi.png" width="120"></td>
-        <td>129,99&euro;</td>
-        <td><a href="../Edita/editaProduto.php"><i class="fas fa-cogs"></a></i></td>
-        <td><i class="fas fa-trash-alt"></i></td>
-    </tr>
-  <tr>
-        <td>Nike Air Force 1 Black and White</td>
-        <td><img src="../images/af1bi.png" width="120"></td>
-        <td>119,99&euro; </td>
-      <td><a href="../Edita/editaProduto.php"><i class="fas fa-cogs"></a></i></td>
-      <td><i class="fas fa-trash-alt"></i></td>
-    </tr>
-  <tr>
-        <td>Nike Air Presto Black</td>
-        <td><img src="../images/airprestobi.png" width="120"></td>
-        <td>109,99&euro;</td>
-      <td><a href="../Edita/editaProduto.php"><i class="fas fa-cogs"></a></i></td>
-      <td><i class="fas fa-trash-alt"></i></td>
-    </tr>
-  <tr>
-        <td>Nike Air Max 97 Black</td>
-        <td><img src="../images/airmax97bi.png" width="120"></td>
-        <td>189,99&euro;</td>
-      <td><a href="../Edita/editaProduto.php"><i class="fas fa-cogs"></a></i></td>
-      <td><i class="fas fa-trash-alt"></i></td>
-    </tr>
-  <tr>
-        <td>Nike Air Jordan 1 Obsidian</td>
-        <td><img src="../images/obsidianbi.png" width="120"></td>
-        <td>459,99&euro;</td>
-      <td><a href="../Edita/editaProduto.php"><i class="fas fa-cogs"></a></i></td>
-      <td><i class="fas fa-trash-alt"></i></td>
-    </tr>
-  <tr>
-        <td>Nike Kobe 1 X Undefeated</td>
-        <td><img src="../images/kobe1bi.png" width="120"></td>
-        <td>829,99&euro;</td>
-      <td><a href="../Edita/editaProduto.php"><i class="fas fa-cogs"></a></i></td>
-      <td><i class="fas fa-trash-alt"></i></td>
-    </tr>
 
-</table>
 </body>
 </html>
 
