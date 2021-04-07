@@ -1,6 +1,6 @@
 <?php
 $id=intval($_GET['id']);
-include_once ("../includes/body.inc.php");
+include_once("../includes/body.inc.php");
 
 echo $sql="select * from imagens where imagemId=".$id;
 $result = mysqli_query($con, $sql);
