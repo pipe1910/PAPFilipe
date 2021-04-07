@@ -35,9 +35,6 @@ top_2();
 <a href="adminMarcas.php">
     <button type="button" class="btn btn-light" id="admin">Marcas</button>
 </a>
-    <a href="adminImagens.php">
-    <button type="button" class="btn btn-light" id="admin">Imagens</button>
-</a>
 </h2>
 
 </body>

@@ -4,7 +4,7 @@ top_2();
 
 $con=mysqli_connect("localhost","root","","pap2021sneakerstore");
 $id=intval($_GET["id"]);
-$sql="select * from produtos inner join imagens on produtoId=imagemProdutoId  inner join marcas on produtoMarcaId=marcaId  where produtoMarcaId=".$id;
+$sql="select * from produtos inner join marcas on produtoMarcaId=marcaId  where produtoMarcaId=".$id;
 $result=mysqli_query($con,$sql);
 
 ?>
@@ -62,7 +62,7 @@ $result=mysqli_query($con,$sql);
 
 
                             <a href="../Produtos/ListaProduto.php?id=<?php echo $dados["produtoId"] ?>">
-                                <img class="d-block w-100" src="../images/<?php echo $dados["imagemURL"]?>">
+                                <img class="d-block w-100" src="../images/<?php //echo $dados["imagemURL"]?>">
                             </a>
                             <h3><?php echo $dados["produtoNome"]?><span class="pull-right"></span></h3>
 

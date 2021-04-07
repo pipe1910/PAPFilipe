@@ -17,7 +17,7 @@ $result=mysqli_query($con,$sql);
 
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
-        <td colspan="7" align='right'>
+        <td colspan="8" align='right'>
             <a href="../Adiciona/adicionaProduto.php"><i class='fas fa-plus text-success'> Adicionar produto</i></a>
         </td>
     </tr>
@@ -27,6 +27,7 @@ $result=mysqli_query($con,$sql);
         <th>Descricao</th>
         <th>Preco</th>
         <th>Marca</th>
+        <th>Imagens</th>
         <th colspan="2">op&ccedil&otildees</th>
     </tr>
     <?php
@@ -38,6 +39,7 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['produtoDescricao']?></td>
             <td><?php echo $dados['produtoPreco']?></td>
             <td><?php echo $dados['marcaNome']?></td>
+            <td><a href="../admin/adminImagens.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-image text-primary">Imagens</i></a></td>
             <td><a href="../Edita/editaProduto.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
             <td><a href="#" onclick="confirmaElimina(<?php echo $dados['produtoId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
 
