@@ -12,8 +12,13 @@ top_2();
     <input type="hidden" name="produtoId" value="<?php echo $id?>">
     <label>Nome: </label>
     <input type="text" name="produtoNome" value="<?php echo $dadosProdutos['produtoNome']?>"><br>
+    <label>Descricao:</label>
+    <textarea name="produtoDescricao" cols="50" rows="5"><?php echo $dadosProdutos['produtoDescricao']?>
+    </textarea>
+    <br>
     <label>Preco:</label><br>
     <input type="text" name="produtoPreco" value="<?php echo $dadosProdutos['produtoPreco']?>"><br>
+
 
     <select name="marcaNome">
         <option value="-1">Escolha a marca...</option>
@@ -24,11 +29,11 @@ top_2();
             ?>
             <option value="<?php echo $dadosMarcas['marcaId']?>"
                 <?php
-                if($dadosProdutos['produtoMarcaId']==$dadosMarcas['produtoId'])
+                if($dadosProdutos['produtoMarcaId']==$dadosMarcas['marcaId'])
                     echo " selected ";
                 ?>
             >
-                <?php echo $dadosMarcas['produtoNome']?>
+                <?php echo $dadosMarcas['marcaNome']?>
             </option>
             <?php
         }

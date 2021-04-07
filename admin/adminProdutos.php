@@ -10,27 +10,10 @@ $result=mysqli_query($con,$sql);
 <button type="button" class="btn btn-light">Voltar</button></a>
 <script>
     function confirmaElimina(id) {
-        $.ajax({
-            url:"AJAX/AJAXGetNameProduto.php",
-            type:"post",
-            data:{
-                idCanal:id
-            },
-            success:function (result){
-                if(confirm('Confirma que deseja eliminar o produto:'+result+"?"))
-                    window.location="eliminaProduto.php?id=" + id;
-            }
-        })
-    };
-
-    $('document').ready(function (){
-        $('#search').keyup(function (){
-            fillTableMarcas(this.value);
-        });
-        fillTableMarcas();
-    })
+        if(confirm('Confirma que deseja eliminar o produto?'))
+            window.location="../Elimina/eliminaProduto.php?id=" + id;
+    }
 </script>
-
 
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
@@ -56,7 +39,7 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['produtoPreco']?></td>
             <td><?php echo $dados['marcaNome']?></td>
             <td><a href="../Edita/editaProduto.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
-            <td><a href="../Elimina/eliminaProduto.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
+            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['produtoId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
 
         </tr>
         <?php

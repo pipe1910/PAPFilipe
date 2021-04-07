@@ -35,7 +35,7 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['marcaNome']?></td>
             <td><img width='90' src="../<?php echo $dados['marcaLogoURL']?>"></td>
             <td><a href="../Edita/editaMarca.php?id=<?php echo $dados['marcaId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
-            <td><a onclick="confirmaElimina(<?php echo $dados['marcaId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
+            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['marcaId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
         </tr>
         <?php
     }
