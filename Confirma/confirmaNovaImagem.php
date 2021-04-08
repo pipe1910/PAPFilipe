@@ -9,8 +9,20 @@ $novoNome="images/".$imagem;
 
 copy($_FILES['logoImagem']['tmp_name'],"../".$novoNome);
 
-echo $sql="insert into imagens(imagemNome,imagemURL,imagemProdutoId,imagemId) 
+$sql="insert into imagens(imagemNome,imagemURL,imagemProdutoId,imagemId) 
 values('".$nome."','".$novoNome."','".$id."',0);";
 mysqli_query($con,$sql);
-header("location:../admin/adminImagens.php?id={$id}");
+$lastId=mysqli_insert_id($con); // último ID automático
+// se não existe nenhuma imagem em destaque a útlima fica em destaque
+$sql="Select * from imagens where imagemDestaque = 'sim' and imagemProdutoId=".$id;
+mysqli_query($con,$sql);
+if(mysqli_affected_rows($con)==0){// não há nenhuna imagem em destaque
+    $sql="update imagens set imagemDestaque = 'sim' where imagemId=".$lastId;
+    mysqli_query($con,$sql);
+}
+
+
+
+
+header("location:../admin/adminImagens.php?id=".$id);
 ?>

@@ -7,7 +7,7 @@ $id=intval($_GET["id"]);
 $sql="select * from produtos inner join marcas on produtoMarcaId=marcaId  where produtoMarcaId=".$id;
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
-
+echo mysqli_affected_rows($con);
 ?>
 <!DOCTYPE HTML>
 
