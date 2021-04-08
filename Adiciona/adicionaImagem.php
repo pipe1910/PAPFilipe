@@ -6,7 +6,8 @@ $sql="select * from produtos where produtoId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 ?>
-<h2 align="center" style="margin-top: 10%">
+<div class="container" align="center">
+    <h2 align="center" style="margin-bottom: 10px">Adiciona Imagem</h2>
 <form action="../Confirma/confirmaNovaImagem.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="idProduto" value="<?php echo $dados['produtoId'] ?>">
     <label>Nome: </label>

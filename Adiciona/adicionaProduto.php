@@ -3,13 +3,14 @@ include_once("../includes/body.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 top_2();
 ?>
-<h2 align="center" style="margin-top: 10%">
+<div class="container" align="center">
+    <h2 align="center" style="margin-bottom: 10px">Adiciona Produto</h2>
 <form action="../Confirma/confirmaAdicionaProduto.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="produtoNome"><br>
     <br>
     <label>Descricao:</label>
-    <textarea name="produtoDescricao" cols="50" rows="5">
+    <textarea maxlength="100" name="produtoDescricao" cols="5" rows="2">
     </textarea>
     <br>
     <label>Preco:</label>
@@ -32,9 +33,9 @@ top_2();
         ?>
 
     </select>
-    <input type="Submit" value="Adiciona">
+    <input type="Submit" value="Adiciona" class="mt-3">
    <br>
-
+    </div>
 
 
 

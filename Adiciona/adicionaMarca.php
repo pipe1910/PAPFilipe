@@ -2,7 +2,8 @@
 include_once("../includes/body.inc.php");
 top_2();
 ?>
-<h2 align="center" style="margin-top: 10%">
+<div class="container" align="center">
+    <h2 align="center" style="margin-bottom: 10px">Adiciona Marca</h2>
 <form action="../Confirma/confirmaNovaMarca.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="nomeMarca"><br>

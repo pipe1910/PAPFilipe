@@ -7,7 +7,8 @@ $resultProdutos=mysqli_query($con,$sql);
 $dadosProdutos=mysqli_fetch_array($resultProdutos);
 top_2();
 ?>
-<h2 align="center" style="margin-top: 10%">
+<div class="container" align="center">
+    <h2 align="center" style="margin-bottom: 10px">Edita Produto</h2>
 <form action="../Confirma/confirmaEditaProduto.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="produtoId" value="<?php echo $id?>">
     <label>Nome: </label>

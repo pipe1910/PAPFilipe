@@ -5,6 +5,9 @@ $nome=addslashes($_POST['nomeImagem']);
 $id=intval($_POST['imagemId']);
 $imagem=$_FILES['imagem']['name'];
 $novoNome="images/".$imagem;
+$sql="select imagemProdutoId from imagens";
+$result = mysqli_query($con, $sql);
+$dados = mysqli_fetch_array($result);
 $sql="Update imagens set imagemNome='".$nome."'";
 if($imagem!=''){
     $sql.=", imagemURL='images/".$imagem."'";
@@ -12,5 +15,5 @@ if($imagem!=''){
 }
 $sql.=" where imagemId=".$id;
 mysqli_query($con,$sql);
-header("location:../admin/adminImagens.php");
+header("location:../admin/adminImagens.php?id=".$dados['imagemProdutoId']);
 ?>

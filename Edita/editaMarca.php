@@ -19,8 +19,8 @@ $dados = mysqli_fetch_array($result);
         reader.readAsDataURL(event.target.files[0]);
     }
 </script>
-<div class="container">
-<h2 align="center" style="margin-top: 10%">
+<div class="container" align="center">
+    <h2 align="center" style="margin-bottom: 10px">Edita Marca</h2>
     <form action="../Confirma/confirmaEditaMarca.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="marcaId" value="<?php echo $id ?>">
         <label>Nome: </label>
@@ -28,6 +28,7 @@ $dados = mysqli_fetch_array($result);
         <label>Logótipo:</label><br>
         <img width="400" id="output_image" src="../<?php echo $dados['marcaLogoURL']?>"><br>
         <input type="file" accept="image/*" name="logoMarca" onchange="preview_image(event)" style="color: darkgray">
-        <input type="Submit" value="Edita">
+        <br>
+        <input type="Submit" value="Edita" class="mt-3">
     </form>
     </div>
