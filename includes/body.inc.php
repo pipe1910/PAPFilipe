@@ -82,7 +82,7 @@ function top(){
                                 $result=mysqli_query($con,$sql);
                                 while($dados=mysqli_fetch_array($result)){
                                 ?>
-                                <li><a class="menu" href="Marcas/marca.php?id=<?php echo $dados["marcaId"] ?>"><?php echo $dados["marcaNome"] ?></a></li>
+                                <li><a class="menu" href="Marcas/Marca.php?id=<?php echo $dados["marcaId"] ?>"><?php echo $dados["marcaNome"] ?></a></li>
                                 <?php
                                 }
                                 ?>
