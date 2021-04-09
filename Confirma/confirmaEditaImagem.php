@@ -5,7 +5,7 @@ $nome=addslashes($_POST['nomeImagem']);
 $id=intval($_POST['imagemId']);
 $imagem=$_FILES['imagem']['name'];
 $novoNome="images/".$imagem;
-$sql="select imagemProdutoId from imagens";
+echo $sql="select imagemProdutoId from imagens where imagemId=".$id;
 $result = mysqli_query($con, $sql);
 $dados = mysqli_fetch_array($result);
 $sql="Update imagens set imagemNome='".$nome."'";
