@@ -5,5 +5,5 @@ $id = intval($_GET['id']);
 $sql = "delete from marcas where marcaId = ".$id;
 
 mysqli_query($con, $sql);
-header("location:../admin/adminMarcas.php");
+header("location:adminMarcas.php");
 ?>

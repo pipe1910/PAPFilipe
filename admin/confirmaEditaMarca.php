@@ -12,5 +12,5 @@ if($imagem!=''){
 }
 $sql.=" where marcaId=".$id;
 mysqli_query($con,$sql);
-header("location:../admin/adminMarcas.php");
+header("location:adminMarcas.php");
 ?>

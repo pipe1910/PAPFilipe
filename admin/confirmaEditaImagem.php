@@ -15,5 +15,5 @@ if($imagem!=''){
 }
 $sql.=" where imagemId=".$id;
 mysqli_query($con,$sql);
-header("location:../admin/adminImagens.php?id=".$dados['imagemProdutoId']);
+header("location:adminImagens.php?id=".$dados['imagemProdutoId']);
 ?>

@@ -1,5 +1,5 @@
 <?php
-include_once ("../includes/body.inc.php");
+include_once("../includes/body.inc.php");
 
 $nome=addslashes($_POST['produtoNome']);
 $descricao=addslashes($_POST['produtoDescricao']);
@@ -11,5 +11,5 @@ $sql="Update produtos set produtoNome='".$nome."', produtoDescricao='".$descrica
 $sql.=", produtoMarcaId='".$marcaId."'";
 $sql.=" where produtoId=".$id;
 mysqli_query($con,$sql);
-header("location:../admin/adminProdutos.php");
+header("location:adminProdutos.php");
 ?>

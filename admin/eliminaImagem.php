@@ -9,5 +9,5 @@ $dados = mysqli_fetch_array($result);
  echo $sql = "delete from imagens where imagemId = '$id'";
 
 mysqli_query($con, $sql);
-header("location:../admin/adminImagens.php?id=".$dados['imagemProdutoId']);
+header("location:adminImagens.php?id=".$dados['imagemProdutoId']);
 ?>

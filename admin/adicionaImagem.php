@@ -8,7 +8,7 @@ $dados=mysqli_fetch_array($result);
 ?>
 <div class="container" align="center">
     <h2 align="center" style="margin-bottom: 10px">Adiciona Imagem</h2>
-<form action="../Confirma/confirmaNovaImagem.php" method="post" enctype="multipart/form-data">
+<form action="confirmaNovaImagem.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="idProduto" value="<?php echo $dados['produtoId'] ?>">
     <label>Nome: </label>
     <input type="text" name="nomeImagem"><br>

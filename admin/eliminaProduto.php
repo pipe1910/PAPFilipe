@@ -5,5 +5,5 @@ $id = intval($_GET['id']);
  echo $sql = "delete from produtos where produtoId =".$id;
 
 mysqli_query($con, $sql);
-header("location:../admin/adminProdutos.php");
+header("location:adminProdutos.php");
 ?>

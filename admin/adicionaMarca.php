@@ -4,7 +4,7 @@ top_2();
 ?>
 <div class="container" align="center">
     <h2 align="center" style="margin-bottom: 10px">Adiciona Marca</h2>
-<form action="../Confirma/confirmaNovaMarca.php" method="post" enctype="multipart/form-data">
+<form action="confirmaNovaMarca.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="nomeMarca"><br>
     <label>Log&oacutetipo:</label>

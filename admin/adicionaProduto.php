@@ -5,7 +5,7 @@ top_2();
 ?>
 <div class="container" align="center">
     <h2 align="center" style="margin-bottom: 10px">Adiciona Produto</h2>
-<form action="../Confirma/confirmaAdicionaProduto.php" method="post" enctype="multipart/form-data">
+<form action="confirmaAdicionaProduto.php" method="post" enctype="multipart/form-data">
     <label>Nome: </label>
     <input type="text" name="produtoNome"><br>
     <br>

@@ -11,14 +11,14 @@ $result=mysqli_query($con,$sql);
 <script>
     function confirmaElimina(id) {
         if(confirm('Confirma que deseja eliminar o produto?'))
-            window.location="../Elimina/eliminaProduto.php?id=" + id;
+            window.location="eliminaProduto.php?id=" + id;
     }
 </script>
 
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
         <td colspan="8" align='right'>
-            <a href="../Adiciona/adicionaProduto.php"><i class='fas fa-plus text-success'> Adicionar produto</i></a>
+            <a href="adicionaProduto.php"><i class='fas fa-plus text-success'> Adicionar produto</i></a>
         </td>
     </tr>
     <tr>
@@ -40,7 +40,7 @@ $result=mysqli_query($con,$sql);
             <td><?php echo $dados['produtoPreco']?></td>
             <td><?php echo $dados['marcaNome']?></td>
             <td><a href="../admin/adminImagens.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-image text-primary">Imagens</i></a></td>
-            <td><a href="../Edita/editaProduto.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
+            <td><a href="editaProduto.php?id=<?php echo $dados['produtoId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
             <td><a href="#" onclick="confirmaElimina(<?php echo $dados['produtoId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
 
         </tr>

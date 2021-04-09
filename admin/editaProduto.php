@@ -9,7 +9,7 @@ top_2();
 ?>
 <div class="container" align="center">
     <h2 align="center" style="margin-bottom: 10px">Edita Produto</h2>
-<form action="../Confirma/confirmaEditaProduto.php" method="post" enctype="multipart/form-data">
+<form action="confirmaEditaProduto.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="produtoId" value="<?php echo $id?>">
     <label>Nome: </label>
     <input type="text" name="produtoNome" value="<?php echo $dadosProdutos['produtoNome']?>"><br>

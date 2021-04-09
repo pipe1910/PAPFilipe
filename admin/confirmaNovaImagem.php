@@ -24,5 +24,5 @@ if(mysqli_affected_rows($con)==0){// não há nenhuna imagem em destaque
 
 
 
-header("location:../admin/adminImagens.php?id=".$id);
+header("location:adminImagens.php?id=".$id);
 ?>

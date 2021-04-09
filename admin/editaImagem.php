@@ -21,7 +21,7 @@ $dados = mysqli_fetch_array($result);
 </script>
 <div class="container">
 <h2 align="center" style="margin-top: 10%">
-    <form action="../Confirma/confirmaEditaImagem.php" method="post" enctype="multipart/form-data">
+    <form action="confirmaEditaImagem.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="imagemId" value="<?php echo $id ?>">
         <label>Nome: </label>
         <input type="text" name="nomeImagem" value="<?php echo $dados ['imagemNome'] ?>"><br>

@@ -21,7 +21,7 @@ $dados = mysqli_fetch_array($result);
 </script>
 <div class="container" align="center">
     <h2 align="center" style="margin-bottom: 10px">Edita Marca</h2>
-    <form action="../Confirma/confirmaEditaMarca.php" method="post" enctype="multipart/form-data">
+    <form action="confirmaEditaMarca.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="marcaId" value="<?php echo $id ?>">
         <label>Nome: </label>
         <input type="text" name="nomeMarca" value="<?php echo $dados ['marcaNome'] ?>"><br>

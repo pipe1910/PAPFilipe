@@ -11,5 +11,5 @@ $sql="insert into produtos(produtoNome,produtoDescricao,produtoPreco,produtoMarc
 values('".$prodnome."','".$prodDescricao."','".$prodpreco."','".$produtomarcaId."'); ";
 mysqli_query($con,$sql);
 
-header("location: ../admin/adminProdutos.php");
+header("location: adminProdutos.php");
 ?>
