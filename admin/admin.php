@@ -35,7 +35,17 @@ top_2();
 <a href="adminMarcas.php">
     <button type="button" class="btn btn-light" id="admin">Marcas</button>
 </a>
+    <br>
+    <br><a href="adminCriticasEFeedBacks.php">
+        <button type="button" class="btn btn-light" id="admin">Criticas e Feedbacks</button>
+    </a>
+    <a href="adminCarrinho.php">
+        <button type="button" class="btn btn-light" id="admin">Carrinho</button>
+    </a>
 </h2>
+
+
+
 
 </body>
 </html>
