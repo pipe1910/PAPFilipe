@@ -30,7 +30,6 @@ top_2();
     <br>
     <a href="adminProdutos.php">
 <button type="button" class="btn btn-light" id="admin">Produtos</button>
-
 </a>
 <a href="adminMarcas.php">
     <button type="button" class="btn btn-light" id="admin">Marcas</button>
