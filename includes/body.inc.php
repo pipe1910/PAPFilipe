@@ -262,11 +262,11 @@ function bot(){
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
@@ -447,15 +447,15 @@ function bot(){
 
 <!-- Scripts -->
 
-<script src="../assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 
-<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
 
-<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
 
-<script src="../assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
 
 
