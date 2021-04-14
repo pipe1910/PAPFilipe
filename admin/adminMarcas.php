@@ -46,6 +46,6 @@ $result=mysqli_query($con,$sql);
 
 <?php
 
-bot();
+bot_2();
 ?>
 
