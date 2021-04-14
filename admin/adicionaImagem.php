@@ -16,5 +16,5 @@ $dados=mysqli_fetch_array($result);
     <input type="file" name="logoImagem"><br>
     <br>
 
-    <input type="Submit" value="Adiciona">
+    <input type="Submit" value="Adiciona" <button type="button" class="btn btn-success button1 mt-3"></button>
 

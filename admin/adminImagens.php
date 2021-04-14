@@ -18,7 +18,7 @@ $result=mysqli_query($con,$sql);
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
         <td colspan="6" align='right'>
-            <a href="adicionaImagem.php?id=<?php echo $id?>"><i class='fas fa-plus text-success'> Adicionar imagem</i></a>
+            <a href="adicionaImagem.php?id=<?php echo $id?>"><button type="button" class="btn btn-success button1">Adicionar Imagem</button></a>
         </td>
     </tr>
     <tr>
@@ -45,8 +45,8 @@ $result=mysqli_query($con,$sql);
                     }
                     ?>
                 </a></td>
-            <td><a href="editaImagem.php?id=<?php echo $dados['imagemId']?>"> <i class="fas fa-edit text-primary">Edita</i></a></td>
-            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['imagemId']?>);"> <i class="fas fa-trash  text-danger">Elimina</i></a></td>
+            <td><a href="editaImagem.php?id=<?php echo $dados['imagemId']?>"> <button type="button" class="btn btn-info button1">Edita</button></a></td>
+            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['imagemId']?>);"> <button type="button" class="btn btn-danger button1">Elimina</button></a></td>
         </tr>
         <?php
     }

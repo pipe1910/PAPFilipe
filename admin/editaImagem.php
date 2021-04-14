@@ -29,6 +29,6 @@ $dados = mysqli_fetch_array($result);
         <img width="400" id="output_image" src="../<?php echo $dados['imagemURL']?>"><br>
         <input type="file" accept="image/*" name="imagem" onchange="preview_image(event)" style="color: darkgray">
         <br>
-        <input type="Submit" value="Edita" class="mt-3">
+        <input type="Submit" value="Edita" <button type="button" class="btn btn-success button1 mt-3"></button>
     </form>
     </div>

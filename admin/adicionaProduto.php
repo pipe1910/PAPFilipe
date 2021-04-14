@@ -33,7 +33,8 @@ top_2();
         ?>
 
     </select>
-    <input type="Submit" value="Adiciona" class="mt-3">
+    <input type="Submit" value="Adiciona" <button type="button" class="btn btn-success button1 mt-3"></button>
+
    <br>
     </div>
 

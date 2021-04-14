@@ -43,6 +43,7 @@ top_2();
         ?>
     </select>
 <br>
-    <input type="Submit" value="Edita"><br>
+    <input type="Submit" value="Edita" <button type="button" class="btn btn-success button1 mt-3"></button>
+    <br>
 
 
