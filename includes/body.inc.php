@@ -2,6 +2,12 @@
 include_once("config.inc.php");
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $con->set_charset("utf8");
+session_start();
+$_SESSION['carrinho'][0]=-1;
+// não é aqui!
+
+
+
 function top(){
     ?>
     <!DOCTYPE HTML>
@@ -235,6 +241,7 @@ function bot(){
         <script src="assets/js/jquery.scrollex.min.js"></script>
 
         <script src="assets/js/main.js"></script>
+        <script src="js/common.js"></script>
 
 
 
@@ -447,15 +454,16 @@ function bot(){
 
 <!-- Scripts -->
 
-<script src="../assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 
-<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
 
-<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
 
-<script src="../assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="js/common.js"></script>
 
 
 
