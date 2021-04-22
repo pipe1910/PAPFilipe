@@ -16,15 +16,15 @@ top_2();
 <button type="button" class="btn btn-light">Voltar</button></a>
 <script>
     function confirmaElimina(id) {
-        if(confirm('Confirma que deseja eliminar o produto?'))
-            window.location="eliminaProduto.php?id=" + id;
+        if(confirm('Confirma que deseja eliminar a imagem?'))
+            window.location="eliminaSlideshow.php?id=" + id;
     }
 </script>
 
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
         <td colspan="8" align='right'>
-            <a href="adicionaProduto.php"><button type="button" class="btn btn-success button1">Adicionar Produto</button></a>
+            <a href="adicionaSlideshow.php"><button type="button" class="btn btn-success button1">Adicionar imagem ao Slideshow</button></a>
         </td>
     </tr>
     <tr>
