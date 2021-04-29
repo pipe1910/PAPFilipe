@@ -67,15 +67,6 @@ function top(){
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span class="btn-sm btn-light">Localização</span>
                                 </a>
-
-                                <a href="admin/admin.php">
-                                    <i class="fas fa-users-cog"></i>
-                                    <span class="btn-sm btn-light">Administração</span>
-                                </a>
-
-
-
-
 							</div>
 
 						<div class="nav" style="width: 100%;">
