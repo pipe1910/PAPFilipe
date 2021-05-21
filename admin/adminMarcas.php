@@ -9,11 +9,23 @@ $result=mysqli_query($con,$sql);
 <a href="../admin/admin.php"
 <button type="button" class="btn btn-light">Voltar</button></a>
 
+
 <script>
     function confirmaElimina(id) {
-        if(confirm('Confirma que deseja eliminar a marca?'))
-            window.location="eliminaMarca.php?id=" + id;
+        $.ajax({
+            url:"AJAX/AJAXGetNameMarcas.php",
+            type:"post",
+            data:{
+                idMarca:id
+            },
+            success:function (result){
+                if(confirm('Confirma que deseja eliminar a ma rca: ' +result+" ?"))
+
+                    window.location="eliminaMarca.php?id=" + id;
+            }
+        })
     }
+
 </script>
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
