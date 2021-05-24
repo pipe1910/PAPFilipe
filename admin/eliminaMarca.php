@@ -1,10 +1,11 @@
 <?php
-include_once ("includes/body.inc.php");
-$id=intval($_GET['id']);
-echo $sql= "delete from marcas where marcaId=".$id;
+include_once ("../includes/body.inc.php");
+$id=intval($_POST['id']);
+$con=mysqli_connect(HOST,USER,PWD,DATABASE);
+
+$sql= "delete from marcas inner join produtos on produtoMarcaId = marcaId where marcaId ='$id'";
+
 mysqli_query($con,$sql);
-header("location:adminMarcas.php");
-
-
+header("location: adminMarcas.php");
 
 ?>

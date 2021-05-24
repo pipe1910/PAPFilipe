@@ -19,7 +19,7 @@ $result=mysqli_query($con,$sql);
                 idMarca:id
             },
             success:function (result){
-                if(confirm('Confirma que deseja eliminar a ma rca: ' +result+" ?"))
+                if(confirm('Confirma que deseja eliminar a marca: ' +result+" ?"))
 
                     window.location="eliminaMarca.php?id=" + id;
             }
@@ -55,7 +55,6 @@ $result=mysqli_query($con,$sql);
 
 
 </table>
-
 <?php
 
 bot_2();
