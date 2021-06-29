@@ -10,8 +10,8 @@ top();
     <section>
         <div class="container">
             <div class="text-center">
-                <h1>Regista-se</h1>
-                <p class="lead">Cria uma conta e comece realizar as compras!</p>
+                <h1>Registar</h1>
+                <p class="lead">Cria uma conta e comece a fazer as suas compras!</p>
             </div>
         </div>
     </section>

@@ -62,5 +62,5 @@ top();
 </div>
 
 <?php
-Bot();
+bot();
 ?>
