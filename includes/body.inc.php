@@ -48,9 +48,9 @@ function top(){
 
 
 							<div style="float: right">
-							<a href="#" data-toggle="modal" data-target="#login">Login
+							<a href="login.php" data-target="#login">Login
                                 <i class="fas fa-home"></i>
-							<a href="#" data-toggle="modal" data-target="#regista">Registar
+							<a href="registar.php"  data-target="#regista">Registar
                                 <i class="fas fa-sign-in-alt"></i></a>
                                 <br>
                                 <a href="CriticasEFeedBacks.php">
@@ -60,6 +60,13 @@ function top(){
                                 <a href="carrinho.php">
                                     <i class="fas fa-cart-plus"></i>
                                     <span class="btn-sm btn-light">Carrinho</span>
+
+
+
+
+
+
+
 
                                 </a>
 
@@ -304,10 +311,6 @@ function bot(){
                     <span class="btn-sm btn-light">Localização</span>
                 </a>
 
-                <a href="admin.php">
-                    <i class="fas fa-users-cog"></i>
-                    <span class="btn-sm btn-light">Administração</span>
-                </a>
 
         </div>
     </header>
