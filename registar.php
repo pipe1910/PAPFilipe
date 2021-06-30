@@ -11,7 +11,7 @@ top();
         <div class="container">
             <div class="text-center">
                 <h1>Registar</h1>
-                <p class="lead">Cria uma conta e comece a fazer as suas compras!</p>
+                <p class="lead">Crie uma conta e comece a fazer as suas compras!</p>
             </div>
         </div>
     </section>

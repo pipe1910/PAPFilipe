@@ -1,5 +1,5 @@
 function adicionaCarrinho(id){
-    alert(id);
+    alert("O seu produto foi adicionado aol carrinho com sucesso!");
     $.ajax({
         url:"admin/AJAX/AJAXNovoProdutoCarrinho.php",
         type:"post",
@@ -7,7 +7,6 @@ function adicionaCarrinho(id){
             idPrd:id
         },
         success:function(result){
-            alert(result);
         }
     });
 }
