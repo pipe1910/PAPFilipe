@@ -47,33 +47,58 @@ function top(){
 
 
 
+
+
 							<div style="float: right">
+                                <?php
+                                if(!isset($_SESSION['id'])){
+                                ?>
 							<a href="login.php" data-target="#login">Login
-                                <i class="fas fa-home"></i>
+                                <i class="fas fa-user-alt"></i>
+                                &nbsp;
 							<a href="registar.php"  data-target="#regista">Registar
-                                <i class="fas fa-sign-in-alt"></i></a>
+                                <i class="fas fa-address-card"></i>
+                                </a>
+                                <?php
+                                }else{
+                                ?>
+
+                                <section id="banner">
+                                    <div class="inner">
+                                        <header>
+                                            <?php if(isset($_SESSION['id'])){ ?>
+                                                <h2> Bem Vindo, <?php echo  $_SESSION['nome']?>!</h2>
+
+                                                <a href="logout.php"><span>logout&nbsp;&nbsp;<i class="fas fa-sign-in-alt"></i></span></a>
+
+                                            <?php }?>
+                                        </header>
+                                    </div>
+                                </section>
+                                <?php
+                                }
+                                ?>
                                 <br>
-                                <a href="CriticasEFeedBacks.php">
-                                    <i class="fas fa-comments"></i>
-                                    <span class="btn-sm btn-light">Críticas e Feedbacks</span>
-                                </a>
-                                <a href="carrinho.php">
-                                    <i class="fas fa-cart-plus"></i>
-                                    <span class="btn-sm btn-light">Carrinho</span>
+                                <?php
+                                if(isset($_SESSION['id'])){
+                                    ?>
+                                    <a href="CriticasEFeedBacks.php">
+                                        <i class="fas fa-comments"></i>
+                                        <span class="btn-sm btn-light">Críticas e Feedbacks</span>
+                                    </a>
+                                    <a href="carrinho.php">
+                                        <i class="fas fa-cart-plus"></i>
+                                        <span class="btn-sm btn-light">Carrinho</span>
+                                    </a>
+                                    <a href="contact.php">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="btn-sm btn-light">Localização</span>
+                                    </a>
+                                    <?php
+                                }
+                                ?>
 
 
-
-
-
-
-
-
-                                </a>
-
-                                <a href="contact.php">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span class="btn-sm btn-light">Localização</span>
-                                </a>
 							</div>
 
 						<div class="nav" style="width: 100%;">
@@ -177,7 +202,7 @@ function bot(){
 
                             <table class="alt" style="background-color: white">
 
-                                <th><span class="fa fa-envelope-o"></span> <a href="https://www.google.com/intl/pt-PT/gmail/about/#">sneakerstore@apoio.pt</a></th>
+                                <th><i class="fab fa-mailchimp"></i> <a href="https://www.google.com/intl/pt-PT/gmail/about/#">sneakerstore@apoio.pt</a></th>
 
                                 <thead><span class="fa fa-phone"></span> +351 912345678</thead>
 
@@ -192,13 +217,11 @@ function bot(){
 
 
                             <table class="icons" style="height: 51px; width: 300px">
+                                <tr><a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i>&nbsp;&nbsp;<h8>@sneakersP</h8></a></tr>
 
-                                <tr><a href="https://twitter.com/login?lang=pt" class="icon style2 fa-twitter"><span class="label" style="background-color: #ffffff">Twitter</span></a></tr>
 
-                                <tr ><a href="https://pt-pt.facebook.com/" class="icon style2 fa-facebook" style="margin-left: 20px; margin-right: 20px"><span class="label">Facebook</span></a></tr>
-
-                                <tr><a href="https://www.instagram.com/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></tr>
-
+                                <!-- <tr><a href="https://www.instagram.com/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></tr>
+                                <tr ><a href="https://pt-pt.facebook.com/" class="icon style2 fa-facebook" style="margin-left: 20px; margin-right: 20px"><span class="label">Facebook</span></a></tr>-->
 
 
 
@@ -267,13 +290,17 @@ function bot(){
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <script href="js2/common.js"> </script>
 
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body class="is-preload">
@@ -287,32 +314,9 @@ function bot(){
     <!-- Header -->
 
     <header id="header" >
-        <a href="../index.php" class="logo">
+        <a href="index.php" class="logo">
             <span class="title">Sneaker Store</span>
         </a>
-        <div style="float: right">
-            <a href="#" data-toggle="modal" data-target="#login">Login
-                <i class="fas fa-home"></i>
-                <a href="#" data-toggle="modal" data-target="#regista">Registar
-                    <i class="fas fa-sign-in-alt"></i></a>
-                <br>
-                <a href="CriticasEFeedBacks.php">
-                    <i class="fas fa-comments"></i>
-                    <span class="btn-sm btn-light">Críticas e Feedbacks</span>
-                </a>
-                <a href="carrinho.php">
-                    <i class="fas fa-cart-plus"></i>
-                    <span class="btn-sm btn-light">Carrinho</span>
-
-                </a>
-
-                <a href="contact.php">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="btn-sm btn-light">Localização</span>
-                </a>
-
-
-        </div>
     </header>
 
     <?php
@@ -325,7 +329,7 @@ function bot(){
     function bot_2(){
     ?>
 
-    <footer id="footer">
+    <!-- <footer id="footer">
 
         <div class="inner">
 
@@ -441,7 +445,7 @@ function bot(){
 
     </footer>
 
-
+-->
 
 </div>
 
@@ -449,16 +453,16 @@ function bot(){
 
 <!-- Scripts -->
 
-<script src="../assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 
-<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
 
-<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
 
-<script src="../assets/js/main.js"></script>
-<script src="../js/common.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="js/common.js"></script>
 
 
 

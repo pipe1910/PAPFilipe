@@ -4,11 +4,12 @@ include_once("includes/body.inc.php");
 $sql="Select * from users";
 $res=mysqli_query($con,$sql);
 
-top();
+top_2();
 
 ?>
     <section>
         <div class="container">
+            <a href="index.php"> <h8>Voltar</h8></a>
             <div class="text-center">
                 <h1>Registar</h1>
                 <p class="lead">Crie uma conta e comece a fazer as suas compras!</p>
@@ -19,6 +20,7 @@ top();
 
 
     <div class="container">
+
         <form action="confirmaRegistar.php" method="post">
             <div class="container">
                 <div class="modal-body">
@@ -27,8 +29,8 @@ top();
                         <input type="name" class="form-control" name="nome">
                     </div>
                     <div class="form-group">
-                        <label for="InputEmail" >E-mail address</label>
-                        <input type="email" class="form-control"  placeholder="name@example.com" name="email">
+                        <label for="InputEmail" >E-mail</label>
+                        <input type="email" class="form-control"  placeholder="nome@exemplo.com" name="email">
                     </div>
                     <div class="form-group">
                         <label for="InputTelephone" >Telemovel</label>
@@ -45,13 +47,12 @@ top();
                 </div>
                 <div class="modal-footer">
                     <input type="submit" class="w-25" value="Registar">
-                    <a href="login.php"><button type="button" class="primary">Login</button></a>
                 </div>
             </div>
-
+            <a href="login.php"> <h8>Já tem conta? Faça login.</h8></a>
         </form>
     </div>
 
 <?php
-Bot();
+bot_2();
 ?>

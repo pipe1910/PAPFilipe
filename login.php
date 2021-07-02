@@ -1,40 +1,26 @@
 <?php
 include_once("includes/body.inc.php");
 
-if(isset($_GET['msg'])) {
+if(isset($_GET['erro'])) {
 
 
     alert("Nome de utilizador ou palavra-passe errada, tente de novo.");
 }
-if(isset($_GET['message'])) {
 
-
-    alertinativo("Esta conta foi desativada.");
-}
-if(isset($_GET['conetar'])) {
-
-
-    alertcon("Precisa entrar na sua conta antes de requesitar um serviço.");
-}
 function alert($msg) {
     echo "<script type='text/javascript'>alert('$msg');</script>";
 }
-function alertinativo($message) {
-    echo "<script type='text/javascript'>alert('$message');</script>";
-}
-function alertcon($conetar) {
-    echo "<script type='text/javascript'>alert('$conetar');</script>";
-}
 
-top();
+top_2();
 
 ?>
 
     <section>
         <div class="container">
+            <a href="index.php"> <h8>Voltar</h8></a>
             <div class="text-center">
                 <h1>Login</h1>
-                <p class="lead">Entre na sua conta faça as suas compras!</p>
+                <p class="lead">Entre na sua conta e continue a fazer suas compras!</p>
             </div>
         </div>
     </section>
@@ -54,12 +40,13 @@ top();
                 </div>
                 <div class="modal-footer">
                     <input type="submit" class="w-25" value="Entrar">
-                    <a href="registar.php"><button type="button" class="primary">Registar</button></a>
                 </div>
             </div>
+            <a href="registar.php"> <h8>Ainda não tem registo feito? Faça já.</h8></a>
+
         </form>
     </div>
 
 <?php
-Bot();
+bot_2();
 ?>
