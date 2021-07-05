@@ -24,7 +24,7 @@ top_2();
 <table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
     <tr>
         <td colspan="8" align='right'>
-            <a href="adicionaSlideshow.php"><button type="button" class="btn btn-success button1">Adicionar imagem ao Slideshow</button></a>
+            <a href="Slideshow.php"><button type="button" class="btn btn-success button1">Adicionar imagem ao Slideshow</button></a>
         </td>
     </tr>
     <tr>

@@ -2,7 +2,6 @@
 include_once("includes/body.inc.php");
 top_2();
 
-$con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $sql="Select * from marcas";
 $result=mysqli_query($con,$sql);
 ?>
