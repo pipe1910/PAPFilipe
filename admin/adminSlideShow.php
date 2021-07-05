@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/body.inc.php");
+include_once("includes/body.inc.php");
 top_2();
 
 
@@ -134,6 +134,6 @@ top_2();
 
 <?php
 
-bot();
+bot_2();
 ?>
 
