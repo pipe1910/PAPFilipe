@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/body.inc.php");
+include_once("includes/body.inc.php");
 top_2();
 ?>
 <div class="container" align="center">
