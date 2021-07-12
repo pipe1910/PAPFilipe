@@ -10,7 +10,7 @@ $caminhoSalvar = '../slideshow/'.$nomedoArquivo;
 
 if (move_uploaded_file($caminhoAtualArquivo,$caminhoSalvar)) {
 
-    header("location: SlideShow.php");
+    header("location: adminSlideShow.php");
 }else{
 ?>
     <script>

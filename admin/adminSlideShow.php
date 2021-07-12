@@ -3,137 +3,54 @@ include_once("includes/body.inc.php");
 top_2();
 
 
+$sql ="Select * from slideshow";
+$result=mysqli_query($con,$sql);
 ?>
 
+<section>
+    <div class="container">
 
+        <div class="text-center" style="margin-bottom: 5%">
+            <br>
+        </div>
+    </div>
 
+    <div id="tableContent">
+        <table class='table table-striped' width="100%">
+            <tr>
+                <td colspan="4"  align='center' style="vertical-align: middle">
 
+                    <a class="btn-sm btn-success" href="../admin/adicionaImagemSlideShow.php">Adicionar nova imagem</a>
+                </td>
+            </tr>
+            <tr>
+                <th width="40%">Id</th>
+                <th width="40%">Imagem</th>
+                <th colspan="2" style="text-align: center">Opções</th>
+            </tr>
 
-
-
-
-<a href="../admin/admin.php"
-<button type="button" class="btn btn-light">Voltar</button></a>
+            <?php
+            while($dados=mysqli_fetch_array($result)){// enquanto existirem registos no result
+                ?>
+                <tr>
+                    <td><img width="120" src="../<?php echo $dados['URLSlideShow']?>"></td>
+                    <td><?php echo $dados['idslideshow']?></td>
+                    <td align="center"><a href="editaImagemSlideShow.php?id=<?php echo $dados['idslideshow']?>"><svg xmlns="http://www.w3.org/2000/svg" color="green" width="26" height="26" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"><path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/><path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/></svg></a></td>
+                    <td align="center"><a onclick="confirmaElimina(<?php echo $dados['idslideshow'] ?>)"><svg xmlns="http://www.w3.org/2000/svg" color="green" width="26" height="26" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/></svg></a></td>
+                </tr>
+                <?php
+            }
+            ?>
+        </table>
+    </div>
+</section>
 <script>
-    function confirmaElimina(id) {
-        if(confirm('Confirma que deseja eliminar a imagem?'))
-            window.location="eliminaSlideshow.php?id=" + id;
+    function confirmaElimina(id){
+        if (confirm('Tem a certeza que quer eliminar esta imagem?')) {
+            window.location.href ="eliminaImagemSlideShow.php?id="+id;
+        }
     }
 </script>
-
-<table class='table table-striped'  style="width: 100%; margin-bottom: 200px; border: 2px black;">
-    <tr>
-        <td colspan="8" align='right'>
-            <a href="Slideshow.php"><button type="button" class="btn btn-success button1">Adicionar imagem ao Slideshow</button></a>
-        </td>
-    </tr>
-    <tr>
-
-        <th>Imagem</th>
-
-        <th colspan="2" class="align-center">op&ccedil&otildees</th>
-    </tr>
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <?php
-            $dir = "../slideshow";
-            $cdir = scandir($dir);
-            $cont = 0;
-            foreach ($cdir as $key => $value) {
-                if (!in_array($value, array(".", ".."))) {
-                    ?>
-                    <li data-target="#carouselExampleIndicators"
-                        data-slide-to="<?php echo $cont; ?>" class="
-                      <?php if ($cont == 0) {
-                        echo " active ";
-                    } ?>"></li>
-                    <?php
-                    $cont++;
-                }
-
-            }
-            ?>
-        </ol>
-        <div class="carousel-inner">
-            <?php
-            $cdir = scandir($dir);
-            $cont = 0;
-            foreach ($cdir as $key => $value) {
-                if (!in_array($value, array(".", ".."))) {
-                    ?>
-                    <div class="carousel-item"
-
-
-                    } ?>">
-                        <?php
-
-                        ?>
-                        <td> <img width='90' src="<?php echo $dir . "/" . $value ?>"></td>
-
-                    </div>
-                    <?php
-                    $cont++;
-                }
-            }
-            ?>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <?php
-    while($cont == 0){
-        ?>
-        <tr>
-
-            src="<?php echo $dir . "/" . $value ?>" alt="First slide">
-
-
-            <td><a href="../admin/adminImagens.php?id=<?php echo $dados['produtoId']?>"><button type="button" class="btn btn-secondary button1">Imagens</button></a></td>
-            <td><a href="editaProduto.php?id=<?php echo $dados['produtoId']?>"><button type="button" class="btn btn-info button1">Edita</button></a></td>
-            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['produtoId']?>);"> <button type="button" class="btn btn-danger button1">Elimina</button></a></td>
-
-        </tr>
-        <?php
-    }
-    ?>
-</table>
-
 <?php
-
 bot_2();
 ?>
-
