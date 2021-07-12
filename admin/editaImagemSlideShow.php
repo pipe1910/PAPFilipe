@@ -21,10 +21,10 @@ $dados = mysqli_fetch_array($result);
 </script>
 <div class="container">
 <h2 align="center" style="margin-top: 10%">
-    <form action="confirmaEditaImagem.php" method="post" enctype="multipart/form-data">
+    <form action="confirmaEditaImagemSlideShow.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="imagemId" value="<?php echo $id ?>">
         <label>Imagem:</label><br>
-        <img width="400" id="output_image" src="../<?php echo $dados['imagemURL']?>"><br>
+        <img width="400" id="output_image" src="../<?php echo $dados['URLSlideShow']?>"><br>
         <input type="file" accept="image/*" name="imagem" onchange="preview_image(event)" style="color: darkgray">
         <br>
         <input type="Submit" value="Edita" <button type="button" class="btn btn-success button1 mt-3"></button>

@@ -1,19 +1,18 @@
 <?php
-include_once("../includes/body.inc.php");
-//$con=mysqli_connect(HOST,USER,PWD,DATABASE);
-$nome=addslashes($_POST['nomeImagem']);
-$id=intval($_POST['imagemId']);
+include_once ("../includes/config.inc.php");
+$con=mysqli_connect(HOST,USER,PWD,DATABASE);
+
+$id=intval($_POST['id']);
 $imagem=$_FILES['imagem']['name'];
-$novoNome="images/".$imagem;
-echo $sql="select idslideshow from slideshow where idslideshow=".$id;
-$result = mysqli_query($con, $sql);
-$dados = mysqli_fetch_array($result);
-$sql="Update imagens set imagemNome='".$nome."'";
+$novoNome="../images/".$imagem;
+
+$sql="Update slideshow set ";
 if($imagem!=''){
-    $sql.=", imagemURL='images/".$imagem."'";
+    $sql.="URLSlideShow='images/".$imagem."'";
     copy($_FILES['imagem']['tmp_name'],$novoNome);
 }
-$sql.=" where imagemId=".$id;
+
+$sql.=" where idslideshow=".$id;
+echo $sql;
 mysqli_query($con,$sql);
-header("location:adminImagens.php?id=".$dados['imagemProdutoId']);
-?>
+header("location:../admin/adminSlideShow.php");

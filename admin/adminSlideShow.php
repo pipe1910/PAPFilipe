@@ -4,28 +4,28 @@ top_2();
 
 
 $sql ="Select * from slideshow";
-$result=mysqli_query($con,$sql);
+$result=mysqli_query($con, $sql);
 ?>
 
 <section>
     <div class="container">
 
-        <div class="text-center" style="margin-bottom: 5%">
-            <br>
-        </div>
+
     </div>
 
     <div id="tableContent">
         <table class='table table-striped' width="100%">
             <tr>
-                <td colspan="4"  align='center' style="vertical-align: middle">
+                <a href="../admin/admin.php"
+                <button type="button" class="btn btn-light">Voltar</button></a>
+                <td colspan="4"  align='right' style="right: auto">
 
-                    <a class="btn-sm btn-success" href="../admin/adicionaImagemSlideShow.php">Adicionar nova imagem</a>
+                   <a href="adicionaImagemSlideShow.php"> <button type="button" class="btn btn-success button1">Adicionar Imagem</button></a>
                 </td>
             </tr>
             <tr>
-                <th width="40%">Id</th>
                 <th width="40%">Imagem</th>
+                <th width="40%">Id</th>
                 <th colspan="2" style="text-align: center">Opções</th>
             </tr>
 
