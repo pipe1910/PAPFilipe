@@ -1,25 +1,16 @@
 <?php
+include_once ("../includes/body.inc.php");
+$id=intval($_GET['id']);
+$con=mysqli_connect(HOST,USER,PWD,DATABASE);
 
-$con = mysqli_connect("localhost", "root", "", "pap2021sneakerstore");
-$id = intval($_GET['id']);
+ $sql = "delete from marcas where marcaId = ".$id;
+ $sql2 = "delete from produtos where produtoMarcaId = ".$id;
+ $sql3 = "delete imagens from imagens inner join produtos on imagemProdutoId = produtoId where produtoMarcaId = ".$id;
 
+mysqli_query($con,$sql3);
 
-$sql = "delete from produtos inner join imagens on imagemProdutoId = produtoId where  produtoMarcaId = ".$id;
-
+mysqli_query($con, $sql2);
 mysqli_query($con, $sql);
+header("location: adminMarcas.php");
 
-if(mysqli_query($con, $sql)){
-
-    $con = mysqli_connect("localhost", "root", "", "pap2021sneakerstore");
-    $id = intval($_GET['id']);
-
-
-    $sql = "delete from marcas inner join produtos on marcaId = produtoMarcaId  left outer join imagens on imagemProdutoId = produtoId where marcaId =".$id;
-
-    mysqli_query($con, $sql);
-
-
-}
-
-header("location:adminMarcas.php");
 ?>

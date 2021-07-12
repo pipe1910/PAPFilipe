@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/body.inc.php");
+include_once("includes/body.inc.php");
 top_2();
 ?>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
@@ -34,7 +34,7 @@ top_2();
 <a href="adminMarcas.php">
     <button type="button" class="btn btn-light" id="admin">Marcas</button>
 </a>
-<a href="adminSlideshow.php">
+<a href="adminSlideShow.php">
     <button type="button" class="btn btn-light" id="admin">Slideshow</button>
 </a>
 
