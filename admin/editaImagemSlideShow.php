@@ -4,7 +4,7 @@ include_once("includes/body.inc.php");
 top_2();
 $id = intval($_GET['id']);
 
-$sql = "select * from slideshow where idslideshow=$id";
+$sql = "select * from slideshow where slideshowId=$id";
 $result = mysqli_query($con, $sql);
 $dados = mysqli_fetch_array($result);
 
@@ -24,7 +24,7 @@ $dados = mysqli_fetch_array($result);
     <form action="confirmaEditaImagemSlideShow.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="imagemId" value="<?php echo $id ?>">
         <label>Imagem:</label><br>
-        <img width="400" id="output_image" src="../<?php echo $dados['URLSlideShow']?>"><br>
+        <img width="400" id="output_image" src="../<?php echo $dados['slideshowURL']?>"><br>
         <input type="file" accept="image/*" name="imagem" onchange="preview_image(event)" style="color: darkgray">
         <br>
         <input type="Submit" value="Edita" <button type="button" class="btn btn-success button1 mt-3"></button>

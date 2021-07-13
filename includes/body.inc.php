@@ -166,15 +166,6 @@ function bot(){
                                     </div>
 
 
-
-                                    <div class="field">
-
-                                        <textarea name="message" id="message" rows="3" placeholder="Notas"></textarea>
-
-                                    </div>
-
-
-
                                     <div class="field text-right">
 
                                         <label>&nbsp;</label>
