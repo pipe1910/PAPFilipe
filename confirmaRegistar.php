@@ -4,23 +4,16 @@ $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 
 $nome=addslashes($_POST['nome']);
 $email=addslashes($_POST['email']);
-$password=addslashes($_POST['password']);
+$password=md5(addslashes($_POST['password']));
 $telefone=addslashes($_POST['telemovel']);
 $morada=addslashes($_POST['morada']);
-
-
-echo $sql="insert into users(userName,userPassword,userState) values('$nome','$password','ativo')";
+$login=addslashes($_POST['login']);
+$sql="insert into users(userLogin,userPassword) values('".$nome."','".$password."')";
 mysqli_query($con,$sql);
 $lastId=mysqli_insert_id($con);
-
-echo $sql2="insert into perfis(perfilNome,perfilMorada,perfilEmail,perfilTelefone,perfilUserId) values('$nome','$morada','$email','$telefone','$lastId')";
-mysqli_query($con,$sql2);
-
-
-session_start();
-$_SESSION['id']=$lastId;
-$_SESSION['nome']=$nome;
-
+$sql="insert into perfis(perfilId,perfilNome,perfilMorada,perfilEmail,perfilTelefone) ";
+$sql.=" values(".$lastId.",'".$nome."','".$morada."','".$email."','".$telefone."')";
+mysqli_query($con,$sql);
 header("location:index.php");
 
 ?>

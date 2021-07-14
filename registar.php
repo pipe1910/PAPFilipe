@@ -25,8 +25,8 @@ top_2();
             <div class="container">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="InputName">Nome de Utilizador:</label>
-                        <input type="name" class="form-control" name="nome">
+                        <label for="InputName">Nome</label>
+                        <input type="text" class="form-control" name="nome">
                     </div>
                     <div class="form-group">
                         <label for="InputEmail" >E-mail</label>
@@ -41,8 +41,16 @@ top_2();
                         <input type="text" class="form-control"  name="morada">
                     </div>
                     <div class="form-group">
+                        <label for="InputTelephone" >Nome de utilizador</label>
+                        <input type="text" class="form-control" placeholder=""  name="login">
+                    </div>
+                    <div class="form-group">
                         <label for="InputPassword1">Palavra-passe</label>
                         <input type="password" class="form-control"  name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputPassword1">Confirme a palavra-passe</label>
+                        <input type="password" class="form-control"  name="password2">
                     </div>
                 </div>
                 <div class="modal-footer">
