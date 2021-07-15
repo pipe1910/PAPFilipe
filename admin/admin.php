@@ -37,6 +37,10 @@ top_2();
 <a href="adminSlideShow.php">
     <button type="button" class="btn btn-light" id="admin">Slideshow</button>
 </a>
+    <br>
+    <a href="listaEstadoEncomenda.php">
+    <button type="button" class="btn btn-light" id="admin">Encomendas</button>
+</a>
 
 </h2>
 
