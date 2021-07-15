@@ -13,7 +13,8 @@ mysqli_query($con,$sql);
 $lastId=mysqli_insert_id($con);
 $sql="insert into perfis(perfilId,perfilNome,perfilMorada,perfilEmail,perfilTelefone) ";
 $sql.=" values(".$lastId.",'".$nome."','".$morada."','".$email."','".$telefone."')";
+echo $sql;
 mysqli_query($con,$sql);
-header("location:index.php");
+//header("location:index.php");
 
 ?>

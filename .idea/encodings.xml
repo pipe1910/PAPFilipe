@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/admin/admin.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin/adminCriticasEFeedBacks.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/adminProdutos.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/adminSlideShow.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/admin/listaEstadoEncomenda.php" charset="UTF-8" />
@@ -8,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/criticasEFeedBacks.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/login.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/logout.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/perfilUtilizador.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/registar.php" charset="UTF-8" />
     <file url="PROJECT" charset="ISO-8859-1" />
   </component>

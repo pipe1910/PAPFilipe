@@ -1,6 +1,6 @@
 <?php
 include_once("includes/body.inc.php");
-top();
+top_2();
 ?>
 
     <div id="main" class="alt">
@@ -26,7 +26,7 @@ top();
                     <tr>
 
                         <th width="10%" class="text-center">Id</th>
-                        <th width="30%" class="text-center" >Data de Realização</th>
+                        <th width="30%" class="text-center" >Data de RealizaÃ§Ã£o</th>
                         <th width="20%" class="text-center">Valor</th>
                         <th width="20%" class="text-center">Estado</th>
                         <th width="20%" class="text-center">Detalhes</th>
@@ -52,7 +52,7 @@ top();
                                     <table class="table table-striped table-hover" style="color: #000">
                                         <tr>
                                             <th width="50%" class="text-center">Produto</th>
-                                            <th width="30%" class="text-center" >Preço</th>
+                                            <th width="30%" class="text-center" >PreÃ§o</th>
                                             <th width="20%" class="text-center">Quant.</th>
                                         </tr>
                                         <?php
@@ -87,5 +87,5 @@ top();
     </div>
 
 <?php
-Bottom();
+Bot_2();
 ?>

@@ -8,7 +8,7 @@ $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 
 if(!isset($dados['userId'])){ // não existe o login
-    header("location:login.php?erro");
+   header("location:login.php?erro");
 }
 else{
     $sql="select userId, userPassword, userLogin from users where userId =".$dados['userId'];

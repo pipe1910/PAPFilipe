@@ -41,6 +41,9 @@ top_2();
     <a href="listaEstadoEncomenda.php">
     <button type="button" class="btn btn-light" id="admin">Encomendas</button>
 </a>
+    <a href="adminCriticasEFeedBacks.php">
+    <button type="button" class="btn btn-light" id="admin">Críticas</button>
+</a>
 
 </h2>
 

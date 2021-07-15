@@ -68,7 +68,6 @@ function top(){
                                         <header>
                                             <?php if(isset($_SESSION['id'])){ ?>
                                                 <h2> Bem Vindo, <?php echo  $_SESSION['nome']?>!</h2>
-
                                                 <a href="logout.php"><span>logout&nbsp;&nbsp;<i class="fas fa-sign-in-alt"></i></span></a>
 
                                             <?php }?>
@@ -93,6 +92,10 @@ function top(){
                                     <a href="contact.php">
                                         <i class="fas fa-map-marker-alt"></i>
                                         <span class="btn-sm btn-light">Localização</span>
+                                    </a>
+                                    <a href="perfilUtilizador.php">
+                                        <i class="fas fa-user-friends"></i>
+                                        <span class="btn-sm btn-light">Perfil</span>
                                     </a>
                                     <?php
                                 }
