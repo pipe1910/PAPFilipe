@@ -21,9 +21,14 @@ function confirmaEliminaCarrinho(idProduto) {
         success:function (result){
             nomeProduto=result;
             if(confirm('Confirma que deseja eliminar o produto:'+nomeProduto+'?'))
-                window.location="EliminaProdutoCarrinho.php?id=" + idProduto;
+                window.location="removeCarrinho.php?id=" + idProduto;
         }
     });
+}
+
+
+function mostrarDetalhes(){
+    $('#detalhes').toggle();
 }
 
 

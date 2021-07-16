@@ -1,5 +1,5 @@
 <?php
-include_once("../includes/body.inc.php");
+include_once("includes/body.inc.php");
 $id=intval($_GET['id']);
 
 $sql="select * from produtos where produtoId=$id";
@@ -40,7 +40,7 @@ top_2();
         ?>
         <link href="summernote.css" rel="stylesheet">
         <script src='js2/tinymce/tinymce.min.js'></script>
-        <label style="color:white; font-size: 15px" class="badge badge-dark">Descrição do Estabelecimento: </label>
+        <label style="color:white; font-size: 15px" class="badge badge-dark">DescriÃ§Ã£o do Estabelecimento: </label>
         <script>
             tinymce.init({
                 selector: 'textarea#myTextarea',
