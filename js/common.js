@@ -20,13 +20,34 @@ function confirmaEliminaCarrinho(idProduto) {
         },
         success:function (result){
             nomeProduto=result;
-            if(confirm('Confirma que deseja eliminar o produto:'+nomeProduto+'?'))
-                window.location="removeCarrinho.php?id=" + idProduto;
+            if(confirm('Confirma que deseja eliminar o produto:'+nomeProduto+'?')){
+                $.ajax({
+                    url:"admin/AJAX/AJAXEliminaProdutoCarrinho.php",
+                    type:"post",
+                    data: {
+                        idPrd:idProduto
+                    },
+                });
+            }
         }
     });
 }
 
-
+function atualizaCarrinho(valor,idProduto) {
+    if (valor > 0) {
+        $.ajax({
+            url: "admin/AJAX/AJAXAtualizaProdutoCarrinho.php",
+            type: "post",
+            data: {
+                idPrd: idProduto,
+                quant: valor
+            },
+            success: function (result) {
+                location.reload();
+            }
+        });
+    }
+}
 function mostrarDetalhes(){
     $('#detalhes').toggle();
 }

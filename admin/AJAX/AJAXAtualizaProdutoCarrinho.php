@@ -1,21 +1,19 @@
 <?php
 $id=intval($_POST['idPrd']);
+$quant=intval($_POST['quant']);
 session_start();
 $produto=array($id=>1);
 $cont=0;
-$encontra=false;
 foreach ($_SESSION['carrinho'] as $prod){
     // echo $prod[$id];
     foreach ($prod as $key => $value)
         if($key==$id){
-            $_SESSION['carrinho'][$cont][$id]++;
+            $_SESSION['carrinho'][$cont][$id]=$quant;
             $encontra=true;
         }
     $cont++;
 }
 
-if(!$encontra)
-    array_push($_SESSION['carrinho'],$produto);
 return true;
 
 ?>

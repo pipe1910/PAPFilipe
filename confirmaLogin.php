@@ -24,6 +24,11 @@ else{
         session_start();
         $_SESSION['id'] = $dados['userId'];
         $_SESSION['nome'] = $dadosP['perfilNome'];
+        $_SESSION['carrinho'][0][0]=-1;
+        $produto=array($id=>1);
+
+        $teste=array(0 => 0);
+        array_push($_SESSION['carrinho'],$teste);
         header("location:index.php");
     }
     else{
