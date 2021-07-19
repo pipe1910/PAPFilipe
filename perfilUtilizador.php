@@ -12,7 +12,8 @@ top_2();
                     <?php if(isset($_SESSION['id'])){ ?>
 
                         <h1> Conta - <?php echo  $_SESSION['nome']?></h1>
-
+                        <a href="index.php"
+                        <button type="button" class="btn btn-light">Voltar</button></a>
                     <?php }else{ ?>
 
                         <h1> Conta </h1>

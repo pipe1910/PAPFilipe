@@ -33,7 +33,7 @@ top_2();
                     <td>
                         <?php
                         $sql="Select * from detalhes inner join produtos on produtoId=detalheProdutoId ";
-                        $sql.=" where detalheEncomendaId=".$dados['encomendaId'];
+                        $sql.="where detalheEncomendaId=".$dados['encomendaId'];
                         $resultPrd=mysqli_query($con,$sql);
                         while($dadosPrd=mysqli_fetch_array($resultPrd)) {
                             echo '<li>' . $dadosPrd['produtoNome'] . '</li>';
