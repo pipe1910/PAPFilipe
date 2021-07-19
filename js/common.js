@@ -33,21 +33,24 @@ function confirmaEliminaCarrinho(idProduto) {
     });
 }
 
-function atualizaCarrinho(valor,idProduto) {
-    if (valor > 0) {
+function atualizaCarrinho(valor,idProduto){
+    if(valor>0){
         $.ajax({
-            url: "admin/AJAX/AJAXAtualizaProdutoCarrinho.php",
-            type: "post",
-            data: {
-                idPrd: idProduto,
-                quant: valor
+            url:"admin/AJAX/AJAXAtualizaProdutoCarrinho.php",
+            type:"post",
+            data:{
+                idPrd:idProduto,
+                quant:valor
             },
-            success: function (result) {
+            success:function (result){
                 location.reload();
             }
         });
     }
+
+
 }
+
 function mostrarDetalhes(){
     $('#detalhes').toggle();
 }

@@ -134,60 +134,11 @@ function bot(){
                 <footer id="footer">
 
                     <div class="inner">
-
+                        <div class="text-center">
                         <section>
 
-                            <h2>Contacte-nos</h2>
 
-                            <form method="post" action="#">
-
-                                <div class="fields">
-
-                                    <div class="field half">
-
-                                        <input type="text" name="nome" id="nome" placeholder="Nome" />
-
-                                    </div>
-
-
-
-                                    <div class="field half">
-
-                                        <input type="text" name="email" id="email" placeholder="Email" />
-
-                                    </div>
-
-
-
-                                    <div class="field">
-
-                                        <input type="text" name="notas" id="notas" placeholder="Crítica" />
-
-                                    </div>
-
-
-                                    <div class="field text-right">
-
-                                        <label>&nbsp;</label>
-
-
-
-                                        <ul class="actions" style="width: 290px; height: 70px">
-
-                                            <li><input type="submit" value="Enviar Mensagem" class="primary" style="height: 80px; text-align: center;" /></li>
-                                        </ul>
-
-                                    </div>
-
-                                </div>
-
-                            </form>
-
-                        </section>
-
-                        <section>
-
-                            <h2>Apoio ao Cliente</h2>
+                            <h2>Apoio ao Cliente:</h2>
 
 
 
@@ -211,14 +162,11 @@ function bot(){
                                 <tr><a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i>&nbsp;&nbsp;<h8>@sneakersP</h8></a></tr>
 
 
-                                <!-- <tr><a href="https://www.instagram.com/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></tr>
-                                <tr ><a href="https://pt-pt.facebook.com/" class="icon style2 fa-facebook" style="margin-left: 20px; margin-right: 20px"><span class="label">Facebook</span></a></tr>-->
-
 
 
 
                             </table>
-
+                    </div>
                         </section>
 
 
@@ -289,7 +237,7 @@ function bot(){
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+   <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
 
 
 </head>

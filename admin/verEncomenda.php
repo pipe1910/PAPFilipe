@@ -4,9 +4,9 @@ top_2();
 
 $id=intval($_GET['id']);
 
-$sql="  select * from encomendaDetalhes inner join produtos 
-                on produtoId=encomendaDetalheProdutoId
-                where encomendaDetalheEncomendaId=".$id;
+$sql="  select * from detalhes inner join produtos 
+                on produtoId=detalheProdutoId
+                where detalheEncomendaId=".$id;
 
 $result=mysqli_query($con,$sql);
 
@@ -14,6 +14,8 @@ $result=mysqli_query($con,$sql);
 ?>
     <div class="container">
         <h1>Detalhes da encomenda</h1>
+        <a href="../admin/listaEstadoEncomenda.php"
+        <button type="button" class="btn btn-light">Voltar</button></a>
         <table class="table table-striped table-hover">
             <tr>
                 <th width="50%" class="text-center">Produto</th>

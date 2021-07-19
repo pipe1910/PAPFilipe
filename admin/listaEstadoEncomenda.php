@@ -1,29 +1,28 @@
 <?php
 include_once("includes/body.inc.php");
-$con=mysqli_connect(HOST,USER,PWD,DATABASE);
+$con=mysqli_connect("localhost","root","","pap2021sneakerstore");
 $con->set_charset("utf8");
-$sql="Select * from encomendas inner join perfis on encomendaPerfilId=perfilId ";
+$sql="Select * from encomendas inner join perfis on perfilId=encomendaPerfilId ";
 $result=mysqli_query($con,$sql);
 
 top_2();
 ?>
 
 
-
     <div class="container">
         <h1>Estado das encomendas</h1>
+        <a href="../admin/admin.php"
+        <button type="button" class="btn btn-light">Voltar</button></a>
 
         <table class='table table-striped' width="100%">
             <tr>
                 <th>Id</th>
-                <th>Cliente</th>
-                <th>Produto</th>
+                <th> Cliente</th>
+                <th> Produto</th>
                 <th>Data</th>
                 <th>Estado</th>
                 <th colspan="2">opções</th>
             </tr>
-            <a href="../admin/admin.php"
-            <button type="button" class="btn btn-light">Voltar</button></a>
             <?php
             while($dados=mysqli_fetch_array($result)){
                 ?>
@@ -33,8 +32,7 @@ top_2();
                     <td><?php echo $dados['perfilNome']?></td>
                     <td>
                         <?php
-                        $sql="Select * from detalhes inner join produtos on produtoId=detalheProdutoId 
-                                                     inner join encomendas where detalheEncomendaId = encomendaId";
+                        $sql="Select * from detalhes inner join produtos on produtoId=detalheProdutoId ";
                         $sql.=" where detalheEncomendaId=".$dados['encomendaId'];
                         $resultPrd=mysqli_query($con,$sql);
                         while($dadosPrd=mysqli_fetch_array($resultPrd)) {
@@ -46,28 +44,28 @@ top_2();
                     <td><?php echo $dados['encomendaEstado']?></td>
                     <td>
                         <?php
-                        if($dados['encomendaEstado']=='preparacao'){
+                        if($dados['encomendaEstado']=='pendente'){
                             ?>
-                            <a class='btn btn-warning btn-xs' href="caminhoEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                                <i class='fa fa-pencil'></i>Despachar</a>
+                            <a href="caminhoEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                                <button type="button" class=" btn-info">Despachar</button></a>
 
-                            <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                                <i class='fa fa-pencil'></i>Detalhes</a>
+                            <a href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                                <button type="button" class=" btn-danger">Detalhes</button></a>
                             <?php
                         }
-                        if($dados['encomendaEstado']=='caminho'){
+                        if($dados['encomendaEstado']=='expedida'){
                             ?>
-                            <a class='btn btn-success btn-xs' href="entregaEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                                <i class='fa fa-pencil'></i>Entregar</a>
+                            <a href="entregaEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                                <button type="button" class=" btn-info">Entregue</button></a>
 
-                            <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                                <i class='fa fa-pencil'></i>Detalhes</a>
+                            <a href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                                <button type="button" class=" btn-danger">Detalhes</button></a>
                             <?php
                         }
                         if($dados['encomendaEstado']=='entregue'){
                             ?>
-                            <a class='btn btn-primary btn-xs' href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                                <i class='fa fa-pencil'></i>Detalhes</a>
+                            <a href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
+                                <button type="button" class=" btn-danger">Detalhes</button></a>
                             <?php
                         }
                         ?>
