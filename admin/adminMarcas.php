@@ -2,10 +2,10 @@
 include_once("includes/body.inc.php");
 top_2();
 
-$sql="Select * from marcas";
+$sql="select * from marcas";
 $result=mysqli_query($con,$sql);
 ?>
-<a href="../admin/admin.php"
+<a href="../admin/admin.php">
 <button type="button" class="btn btn-light">Voltar</button></a>
 
 
@@ -17,8 +17,8 @@ $result=mysqli_query($con,$sql);
             data:{
                 idMarca:id
             },
-            success:function (result){
-                if(confirm('Confirma que deseja eliminar a marca: ' +result+" ?"))
+            success:function (response){
+                if(confirm('Confirma que deseja eliminar a marca: ' +response+" ?"))
 
                     window.location="eliminaMarca.php?id=" + id;
             }
@@ -44,9 +44,9 @@ $result=mysqli_query($con,$sql);
         <tr>
             <td><?php echo $dados['marcaId']?></td>
             <td><?php echo $dados['marcaNome']?></td>
-            <td><img width='90' src="../<?php echo $dados['marcaLogoURL']?>"></td>
+            <td><img width='90' alt="LOGO DA MARCA" src="../<?php echo $dados['marcaLogoURL']?>"></td>
             <td><a href="editaMarca.php?id=<?php echo $dados['marcaId']?>"> <button type="button" class="btn btn-info button1">Edita</button></a></td>
-            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['marcaId']?>);"> <button type="button" class="btn btn-danger button1">Elimina</button></a></td>
+            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['marcaId']?>)"> <button type="button" class="btn btn-danger button1">Elimina</button></a></td>
         </tr>
         <?php
     }
