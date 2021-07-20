@@ -56,7 +56,7 @@ top_2();
                         if($dados['encomendaEstado']=='expedida'){
                             ?>
                             <a href="entregaEncomenda.php?id=<?php echo $dados['encomendaId']?>">
-                                <button type="button" class=" btn-info">Entregue</button></a>
+                                <button type="button" class=" btn-info">Entregar</button></a>
 
                             <a href="verEncomenda.php?id=<?php echo $dados['encomendaId']?>">
                                 <button type="button" class=" btn-danger">Detalhes</button></a>
