@@ -26,7 +26,6 @@ top_2();
                     <h3>Historico das encomendas</h3>
                     <tr>
 
-                        <th width="10%" class="text-center">Id</th>
                         <th width="30%" class="text-center" >Data de Realização</th>
                         <th width="20%" class="text-center">Estado</th>
                         <th width="20%" class="text-center">Detalhes</th>
@@ -41,7 +40,6 @@ top_2();
 
 
                         <tr>
-                            <td class="text-center"><?php echo $dados['encomendaId']?></td>
                             <td class="text-center"><?php echo $dados['encomendaData']?></td>
                             <td class="text-center"><?php echo $dados['encomendaEstado']?></td>
                             <td class="text-center"><button class="btn btn-sm" onclick="mostrarDetalhes()">ver Detalhes </button></td>
