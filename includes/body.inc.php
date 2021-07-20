@@ -85,11 +85,7 @@ function top(){
                                     <a href="carrinho.php">
                                         <i class="fas fa-cart-plus"></i>
                                         <span class="btn-sm btn-light">Carrinho</span>
-                                    </a>
-                                    <a href="contact.php">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <span class="btn-sm btn-light">Localização</span>
-                                    </a>
+
                                     <a href="perfilUtilizador.php">
                                         <i class="fas fa-user-friends"></i>
                                         <span class="btn-sm btn-light">Perfil</span>
