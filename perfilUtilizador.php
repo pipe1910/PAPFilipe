@@ -43,7 +43,7 @@ top_2();
                         <tr>
                             <td class="text-center"><?php echo $dados['encomendaData']?></td>
                             <td class="text-center"><?php echo $dados['encomendaEstado']?></td>
-                            <td class="text-center"><button class="btn btn-sm" onclick="mostrarDetalhes()">ver Detalhes </button></td>
+                            <td class="text-center"><button class="btn btn-sm" onclick="mostrarDetalhes()">ver Detalhes</button></td>
                         </tr>
 
                         <tr>

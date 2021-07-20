@@ -130,14 +130,9 @@ function bot(){
                 <footer id="footer">
 
                     <div class="inner">
-                        <div class="text-center">
+                        <div style="padding-left: 800px" class="text-center">
                         <section>
-
-
                             <h2>Apoio ao Cliente:</h2>
-
-
-
                             <table class="alt" style="background-color: white">
 
                                 <th><i class="fab fa-mailchimp"></i> <a href="https://www.google.com/intl/pt-PT/gmail/about/#">sneakerstore@apoio.pt</a></th>
@@ -148,23 +143,10 @@ function bot(){
 
                             </table>
 
-
-
-                            <h2>Redes Sociais</h2>
-
-
-
-                            <table class="icons" style="height: 51px; width: 300px">
-                                <tr><a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i>&nbsp;&nbsp;<h8>@sneakersP</h8></a></tr>
-
-
-
-
-
                             </table>
-                    </div>
-                        </section>
 
+                        </section>
+                    </div>
 
 
 
