@@ -4,7 +4,7 @@ top_2();
 $con=mysqli_connect(HOST,USER,PWD,DATABASE);
 $sql="Select * from criticas inner join perfis on criticaPerfilId = perfilId";
 $result=mysqli_query($con,$sql);
-$dados=mysqli_fetch_array($result);
+
 ?>
 <a href="../admin/admin.php"
 <button type="button" class="btn btn-light">Voltar</button></a>
