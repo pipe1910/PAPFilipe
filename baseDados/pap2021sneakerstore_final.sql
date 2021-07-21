@@ -11,7 +11,7 @@
  Target Server Version : 50731
  File Encoding         : 65001
 
- Date: 21/07/2021 17:19:51
+ Date: 21/07/2021 19:07:41
 */
 
 SET NAMES utf8mb4;
@@ -28,7 +28,7 @@ CREATE TABLE `criticas`  (
   PRIMARY KEY (`criticaId`) USING BTREE,
   INDEX `fkperfil_idx`(`criticaPerfilId`) USING BTREE,
   CONSTRAINT `fkperfil` FOREIGN KEY (`criticaPerfilId`) REFERENCES `perfis` (`perfilId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of criticas
@@ -68,7 +68,7 @@ CREATE TABLE `encomendas`  (
   PRIMARY KEY (`encomendaId`) USING BTREE,
   INDEX `fk_encomendas_perfis1_idx`(`encomendaPerfilId`) USING BTREE,
   CONSTRAINT `fk_encomendas_perfis1` FOREIGN KEY (`encomendaPerfilId`) REFERENCES `perfis` (`perfilId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of encomendas
