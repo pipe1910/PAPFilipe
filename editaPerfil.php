@@ -1,5 +1,5 @@
 <?php
-include_once("includes/body.inc.php");
+include_once ("includes/body.inc.php");
 top_2();
 $sql = "select * from perfis where perfilId=" .$_SESSION['id'];
 $result = mysqli_query($con, $sql);
@@ -36,15 +36,9 @@ $dados = mysqli_fetch_array($result)
                     </div><br>
                     <br>
                     <div class="form-group">
-                        <label for="Email">Email: </label>
-                        <input type="text" class="form-control" id="Email" name="Email" value="<?php echo $dados['perfilEmail']?>">
-                    </div><br>
-                    <br>
-                    <div class="form-group">
                         <label for="Telemovel">Telemovel: </label>
                         <input type="text" class="form-control" id="Telemovel" name="Telemovel" value="<?php echo $dados['perfilTelefone']?>">
                     </div><br>
-                    <br>
                     <button type="submit" class="btn bg-transparent">Confirma alterações</button>
                     <br>
                 </form>
