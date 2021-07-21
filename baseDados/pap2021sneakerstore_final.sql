@@ -11,7 +11,7 @@
  Target Server Version : 50731
  File Encoding         : 65001
 
- Date: 21/07/2021 16:07:03
+ Date: 21/07/2021 17:19:51
 */
 
 SET NAMES utf8mb4;
@@ -73,14 +73,6 @@ CREATE TABLE `encomendas`  (
 -- ----------------------------
 -- Records of encomendas
 -- ----------------------------
-INSERT INTO `encomendas` VALUES (1, '2021-07-16', 1, 'expedida');
-INSERT INTO `encomendas` VALUES (3, '2021-07-20', 3, 'expedida');
-INSERT INTO `encomendas` VALUES (4, '2021-07-20', 3, 'pendente');
-INSERT INTO `encomendas` VALUES (5, '2021-07-20', 3, 'pendente');
-INSERT INTO `encomendas` VALUES (6, '2021-07-20', 3, 'pendente');
-INSERT INTO `encomendas` VALUES (7, '2021-07-20', 3, 'pendente');
-INSERT INTO `encomendas` VALUES (8, '2021-07-20', 3, 'pendente');
-INSERT INTO `encomendas` VALUES (9, '2021-07-20', 3, 'pendente');
 
 -- ----------------------------
 -- Table structure for imagens
@@ -95,7 +87,7 @@ CREATE TABLE `imagens`  (
   PRIMARY KEY (`imagemId`) USING BTREE,
   INDEX `fk_imagens_produtos1_idx`(`imagemProdutoId`) USING BTREE,
   CONSTRAINT `fk_imagens_produtos1` FOREIGN KEY (`imagemProdutoId`) REFERENCES `produtos` (`produtoId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 56 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 60 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of imagens
@@ -103,10 +95,6 @@ CREATE TABLE `imagens`  (
 INSERT INTO `imagens` VALUES (10, 'yeezy1', 'images/yzy.jpg', 4, 'nao');
 INSERT INTO `imagens` VALUES (11, 'yeezy2', 'images/yzy2.jpg', 4, 'sim');
 INSERT INTO `imagens` VALUES (12, 'yeezy3', 'images/yzy3.jpg', 4, 'nao');
-INSERT INTO `imagens` VALUES (14, 'Vans1', 'images/vans1.jpg', 6, 'nao');
-INSERT INTO `imagens` VALUES (15, 'vans2', 'images/vans2.jpg', 6, 'sim');
-INSERT INTO `imagens` VALUES (16, 'vans3', 'images/vans3.jpg', 6, 'nao');
-INSERT INTO `imagens` VALUES (17, 'vans4', 'images/vans4.jpg', 6, 'nao');
 INSERT INTO `imagens` VALUES (19, 'airforce2', 'images/airforce.jpg', 8, 'sim');
 INSERT INTO `imagens` VALUES (21, 'airforce2', 'images/airforce2.jpg', 8, 'nao');
 INSERT INTO `imagens` VALUES (22, 'airforce3', 'images/airforce3.jpg', 8, 'nao');
@@ -132,6 +120,10 @@ INSERT INTO `imagens` VALUES (48, 'obsidian', 'images/obsidian.jpg', 13, 'nao');
 INSERT INTO `imagens` VALUES (49, 'obsidian2', 'images/obsidian2.jpg', 13, 'sim');
 INSERT INTO `imagens` VALUES (50, 'obsidian3', 'images/obsidian3.jpg', 13, 'nao');
 INSERT INTO `imagens` VALUES (51, 'obsidian4', 'images/obsidian4.jpg', 13, 'nao');
+INSERT INTO `imagens` VALUES (56, 'kobe', 'images/kobe.jpg', 14, 'sim');
+INSERT INTO `imagens` VALUES (57, 'kobe2', 'images/kobe2.jpg', 14, 'nao');
+INSERT INTO `imagens` VALUES (58, 'kobe3', 'images/kobe3.jpg', 14, 'nao');
+INSERT INTO `imagens` VALUES (59, 'kobe4', 'images/kobe4.jpg', 14, 'nao');
 
 -- ----------------------------
 -- Table structure for marcas
@@ -142,7 +134,7 @@ CREATE TABLE `marcas`  (
   `marcaNome` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `marcaLogoURL` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`marcaId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of marcas
@@ -150,7 +142,7 @@ CREATE TABLE `marcas`  (
 INSERT INTO `marcas` VALUES (1, 'Nike', 'images/nike.jpg');
 INSERT INTO `marcas` VALUES (2, 'Adidas', 'images/adidas.jpg');
 INSERT INTO `marcas` VALUES (3, 'Asics', 'images/nb.jpg');
-INSERT INTO `marcas` VALUES (4, 'Vans', 'images/vans.jpg');
+INSERT INTO `marcas` VALUES (5, 'Vans', 'images/vans.jpg');
 
 -- ----------------------------
 -- Table structure for perfis
@@ -173,8 +165,9 @@ CREATE TABLE `perfis`  (
 -- ----------------------------
 INSERT INTO `perfis` VALUES (1, 'Filipe', 'noImage.jpg', 'rua topzao', 'nam@rip.com', '12345678');
 INSERT INTO `perfis` VALUES (2, 'Filipe', 'noImage.jpg', 'rua ganda fixe', 'pipevital@gmail.com', '910234322');
-INSERT INTO `perfis` VALUES (3, 'Pipe ', 'noImage.jpg', 'rua da tua prima', 'epaya@gmail.com', '123456789');
+INSERT INTO `perfis` VALUES (3, 'Pipe', 'noImage.jpg', 'rua da tua prima', 'epaya@gmail.com', '123456789');
 INSERT INTO `perfis` VALUES (4, 'Luis H', 'noImage.jpg', 'rua da vieira', 'luis@gmail.com', '9102345678');
+INSERT INTO `perfis` VALUES (5, 'Filipe', 'noImage.jpg', 'rua da vieira', 'filipe@gmail.com', '912345678');
 
 -- ----------------------------
 -- Table structure for produtos
@@ -195,7 +188,6 @@ CREATE TABLE `produtos`  (
 -- Records of produtos
 -- ----------------------------
 INSERT INTO `produtos` VALUES (4, 'Yeezy Boost 350 V2 \"Zebra\"', '<p>Adidas Yeezy Boost 450 V2 \"Zebra\"</p>', 321.00, 2);
-INSERT INTO `produtos` VALUES (6, 'Vans Japanese Type Sk8-Hi Reissue', '    vans skate', 90.00, 4);
 INSERT INTO `produtos` VALUES (8, 'Nike Air Force 1 07 Premium ', '<p>As Nike Air Force 1 &rsquo;07 s&atilde;o o modelo original de basquetebol que garante uma abordagem renovada daquilo que melhor conheces: pele trabalhada, cores arrojadas e a quantidade perfeita de destaque para que possas brilhar.</p>', 130.00, 1);
 INSERT INTO `produtos` VALUES (9, 'Asics Gel Lyte 4', '    Asics Gel Lyte', 127.00, 3);
 INSERT INTO `produtos` VALUES (10, 'Nike Air Force 1 Black and White', '<p>Descontrai com conforto com as Nike Air Force 1. A sensa&ccedil;&atilde;o de pele cl&aacute;ssica e os detalhes que tornaram estas sapatilhas emblem&aacute;ticas destacam o estilo das tuas sapatilhas na rua.</p>', 110.00, 1);
@@ -232,7 +224,7 @@ CREATE TABLE `users`  (
   `userState` enum('ativo','inativo') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'ativo',
   `userType` enum('adm','cliente') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`userId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
@@ -241,5 +233,6 @@ INSERT INTO `users` VALUES (1, 'Filipe', '81dc9bdb52d04dc20036dbd8313ed055', 'at
 INSERT INTO `users` VALUES (2, 'Filipe', 'e53a0a2978c28872a4505bdb51db06dc', 'ativo', 'adm');
 INSERT INTO `users` VALUES (3, 'Pipe', '81dc9bdb52d04dc20036dbd8313ed055', 'ativo', 'adm');
 INSERT INTO `users` VALUES (4, 'Luis', '827ccb0eea8a706c4c34a16891f84e7b', 'ativo', 'adm');
+INSERT INTO `users` VALUES (5, 'pipe', '81dc9bdb52d04dc20036dbd8313ed055', 'ativo', 'adm');
 
 SET FOREIGN_KEY_CHECKS = 1;
